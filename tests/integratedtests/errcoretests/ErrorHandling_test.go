@@ -8,19 +8,6 @@ import (
 	"github.com/alimtvnetwork/core/errcore"
 )
 
-func callPanicsErrcore(fn func()) bool {
-	didPanic := false
-	func() {
-		defer func() {
-			if r := recover(); r != nil {
-				didPanic = true
-			}
-		}()
-		fn()
-	}()
-	return didPanic
-}
-
 // ── CompiledError ──
 
 func Test_CompiledError_NilErr_Errorhandling(t *testing.T) {
