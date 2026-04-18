@@ -12,7 +12,7 @@ Phase 2 sub-plan: `spec/01-app/29-corestrtests-phase2-merge-plan.md`
 | Phase | Title | Status |
 |-------|-------|--------|
 | 1 | Strip `_Cov<N>` symbols (38 in `SimpleSlice_Cap_test.go`) | ✅ Done — green on `run.ps1 -tc` |
-| 2 | Remove `S##` / `Seg#` cryptic-prefix files (~27) | 🟡 In progress — Batch 2.1 ✅ green; Batch 2.2 ✅ green; Batch 2.3 ✅ green; Batch 2.4 ✅ code complete (5→10 files, 668 funcs); Batch 2.5 pending |
+| 2 | Remove `S##` / `Seg#` cryptic-prefix files (~27) | 🟡 In progress — Batch 2.1 ✅ green; Batch 2.2 ✅ green; Batch 2.3 ✅ green; Batch 2.4 ✅ green (post import-prune fix); Batch 2.5 ✅ code complete (13→13 files, 1295 funcs) — pending `-tc` |
 | 3 | Resolve initialism prefixes HM/HS/SS/LL/LC/VV/KVP/SSO/CCM/CHM/COC/LR (~13) | ⬜ Not started |
 | 4 | Eliminate vague `_Part/_Core/_Full/_Basic/_Gaps…` suffixes (~60) | ⬜ Not started |
 | 5 | Restore data/logic separation (extract `_testcases.go` siblings) | ⬜ Not started |
