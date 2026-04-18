@@ -12,7 +12,7 @@ Phase 2 sub-plan: `spec/01-app/29-corestrtests-phase2-merge-plan.md`
 | Phase | Title | Status |
 |-------|-------|--------|
 | 1 | Strip `_Cov<N>` symbols (38 in `SimpleSlice_Cap_test.go`) | ✅ Done — green on `run.ps1 -tc` |
-| 2 | Remove `S##` / `Seg#` cryptic-prefix files (~27) | 🟡 In progress — Batch 2.1 ✅ green; Batch 2.2 ✅ code complete (3→11 files, 186 funcs); Batches 2.3–2.5 pending |
+| 2 | Remove `S##` / `Seg#` cryptic-prefix files (~27) | 🟡 In progress — Batch 2.1 ✅ green; Batch 2.2 ✅ green; Batch 2.3 ✅ code complete (4→18 files, 455 funcs); Batches 2.4–2.5 pending |
 | 3 | Resolve initialism prefixes HM/HS/SS/LL/LC/VV/KVP/SSO/CCM/CHM/COC/LR (~13) | ⬜ Not started |
 | 4 | Eliminate vague `_Part/_Core/_Full/_Basic/_Gaps…` suffixes (~60) | ⬜ Not started |
 | 5 | Restore data/logic separation (extract `_testcases.go` siblings) | ⬜ Not started |
@@ -37,8 +37,15 @@ Phase 2 sub-plan: `spec/01-app/29-corestrtests-phase2-merge-plan.md`
 - Tooling: `/tmp/batch22/split.py` (regex-based AST-light splitter); `safeTest("…")` labels rewritten in lockstep.
 - Pending validation: user must run `.\run.ps1 -tc` and confirm `✓ READY TO COMMIT` + `coredata/corestr` ≥ 98.5% before Batch 2.3 starts.
 
+## Phase 2 Batch 2.3 Notes (2026-04-18)
+- 4 source files (Seg1–Seg4 in the merge plan), 455 functions → 18 type-scoped target files (13 created, 4 appended to Batch 2.2 outputs, 1 misc).
+- Source files removed: `Seg1_AllIndividualStringsOfStringsLength_Seg1_Utilities_test.go` (136), `Seg2_Collection_Seg2_CollectionMid_test.go` (58), `Seg3_Collection_Seg3_CollectionEnd_test.go` (105), `Seg4_SS_Seg4_SimpleSlice_test.go` (156).
+- Heaviest targets: `SimpleSlice_Queries_FromSeg4_test.go` (134), `Collection_FilterRemaining_FromSeg3_test.go` (95), `Collection_MidAccess_FromSeg2_test.go` (58), `Collection_FromSeg1_test.go` (35).
+- Symbol pattern: `Test_<Type>_<Behaviour>_FromSeg1|Seg2|Seg3|Seg4`. Zero duplicates verified via `grep | sort | uniq -d` across all 50+ test files.
+- Tooling: `/tmp/batch23/split.py` (regex-based AST-light splitter with per-Seg routing rules); `safeTest("…")` labels rewritten in lockstep.
+- Pending validation: user must run `.\run.ps1 -tc` and confirm `✓ READY TO COMMIT` + `coredata/corestr` ≥ 98.5% before Batch 2.4 starts.
+
 ## Remaining Tasks
-- Batch 2.3: Seg1/Seg2/Seg3/Seg4 splits (~80 funcs, files #14–17).
 - Batch 2.4: Seg5/Seg6 splits (~120 funcs, files #18–22).
 - Batch 2.5: Seg7/Seg8 + remaining S03–S13 splits (files #3–10, #23–26).
 - Phases 3–7 per master plan.
