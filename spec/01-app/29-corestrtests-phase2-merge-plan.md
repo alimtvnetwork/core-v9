@@ -1,6 +1,35 @@
 # Phase 2 — S## / Seg# File Merge Plan
 
-## Status: 🟢 In progress — Batch 2.1 ✅ green (`run.ps1 -tc` 10/11, corestr 98.5%); Batch 2.2 ✅ code complete, awaiting `run.ps1 -tc`
+## Status: 🟢 In progress — Batch 2.1 ✅ green; Batch 2.2 ✅ green; Batch 2.3 ✅ code complete, awaiting `run.ps1 -tc`
+
+### Batch 2.3 (executed 2026-04-18)
+Source files removed (4) → target files created/appended (18 total, 455 funcs):
+- `Seg1_AllIndividualStringsOfStringsLength_Seg1_Utilities_test.go` (136 funcs) →
+  - `Collection_FromSeg1_test.go` (35) — *to be merged with Seg2/Seg3 in Phase 6*
+  - `LeftRight_Behaviour_FromSeg1_test.go` (22)
+  - `KeyValuePair_AllMethods_FromSeg1_test.go` (17)
+  - `KeyAnyValuePair_AllMethods_FromSeg1_test.go` (17)
+  - `LeftMiddleRight_Behaviour_FromSeg1_test.go` (12)
+  - `TextWithLineNumber_FromSeg1_test.go` (7)
+  - `CloneSlice_Behaviour_test.go` (+6 appended)
+  - `LeftRightFromSplit_Factories_test.go` (+4 appended)
+  - `LeftMiddleRightFromSplit_Factories_test.go` (+4 appended)
+  - `AllIndividualStringsOfStringsLength_Behaviour_test.go` (4)
+  - `ValueStatus_FromSeg1_test.go` (3)
+  - `AnyToString_Behaviour_test.go` (+3 appended)
+  - `AllIndividualsLengthOfSimpleSlices_Behaviour_test.go` (2)
+- `Seg2_Collection_Seg2_CollectionMid_test.go` (58 funcs) →
+  - `Collection_MidAccess_FromSeg2_test.go` (58)
+- `Seg3_Collection_Seg3_CollectionEnd_test.go` (105 funcs) →
+  - `Collection_FilterRemaining_FromSeg3_test.go` (95)
+  - `Collection_FilterPtr_FromSeg3_test.go` (6)
+  - `Collection_FilterLock_FromSeg3_test.go` (4)
+- `Seg4_SS_Seg4_SimpleSlice_test.go` (156 funcs) →
+  - `SimpleSlice_Queries_FromSeg4_test.go` (134)
+  - `SimpleSlice_AddAppend_FromSeg4_test.go` (11)
+  - `SimpleSlice_Mutators_FromSeg4_test.go` (11)
+
+Symbol pattern: `Test_<Type>_<Behaviour>_FromSeg1|Seg2|Seg3|Seg4`. Zero duplicates verified via `grep | sort | uniq -d`.
 
 ### Batch 2.2 (executed 2026-04-18)
 Source files removed (3) → target files created (11):
