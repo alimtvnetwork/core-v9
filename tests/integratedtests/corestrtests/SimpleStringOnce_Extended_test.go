@@ -43,8 +43,8 @@ func Test_SimpleStringOnce_SimpleSlice(t *testing.T) {
 	})
 }
 
-func Test_SimpleStringOnce_Split(t *testing.T) {
-	safeTest(t, "Test_SimpleStringOnce_Split", func() {
+func Test_SimpleStringOnce_Split_Extended(t *testing.T) {
+	safeTest(t, "Test_SimpleStringOnce_Split_Extended", func() {
 		// Arrange
 		sso := corestr.New.SimpleStringOnce.Init("a,b,c")
 
@@ -178,8 +178,8 @@ func Test_SimpleStringOnce_ClonePtr_Nil(t *testing.T) {
 	})
 }
 
-func Test_SimpleStringOnce_Clone(t *testing.T) {
-	safeTest(t, "Test_SimpleStringOnce_Clone", func() {
+func Test_SimpleStringOnce_Clone_Extended(t *testing.T) {
+	safeTest(t, "Test_SimpleStringOnce_Clone_Extended", func() {
 		// Arrange
 		sso := corestr.New.SimpleStringOnce.Init("x")
 
@@ -211,8 +211,8 @@ func Test_SimpleStringOnce_CloneUsingNewVal(t *testing.T) {
 	})
 }
 
-func Test_SimpleStringOnce_Dispose(t *testing.T) {
-	safeTest(t, "Test_SimpleStringOnce_Dispose", func() {
+func Test_SimpleStringOnce_Dispose_Extended(t *testing.T) {
+	safeTest(t, "Test_SimpleStringOnce_Dispose_Extended", func() {
 		// Arrange
 		sso := corestr.New.SimpleStringOnce.InitPtr("val")
 

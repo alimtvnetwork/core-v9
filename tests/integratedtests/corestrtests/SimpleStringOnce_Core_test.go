@@ -197,8 +197,8 @@ func Test_SimpleStringOnce_GetSetOnce_Uninitialized(t *testing.T) {
 	})
 }
 
-func Test_SimpleStringOnce_GetSetOnce_AlreadyInit(t *testing.T) {
-	safeTest(t, "Test_SimpleStringOnce_GetSetOnce_AlreadyInit", func() {
+func Test_SimpleStringOnce_GetSetOnce_AlreadyInit_Core(t *testing.T) {
+	safeTest(t, "Test_SimpleStringOnce_GetSetOnce_AlreadyInit_Core", func() {
 		// Arrange
 		sso := corestr.New.SimpleStringOnce.Init("existing")
 
@@ -343,8 +343,8 @@ func Test_SimpleStringOnce_ConcatNew_SsoCore(t *testing.T) {
 	})
 }
 
-func Test_SimpleStringOnce_ConcatNewUsingStrings(t *testing.T) {
-	safeTest(t, "Test_SimpleStringOnce_ConcatNewUsingStrings", func() {
+func Test_SimpleStringOnce_ConcatNewUsingStrings_Core(t *testing.T) {
+	safeTest(t, "Test_SimpleStringOnce_ConcatNewUsingStrings_Core", func() {
 		// Arrange
 		sso := corestr.New.SimpleStringOnce.Init("a")
 
@@ -526,8 +526,8 @@ func Test_SimpleStringOnce_Int32_SsoCore(t *testing.T) {
 	})
 }
 
-func Test_SimpleStringOnce_Uint16(t *testing.T) {
-	safeTest(t, "Test_SimpleStringOnce_Uint16", func() {
+func Test_SimpleStringOnce_Uint16_Core(t *testing.T) {
+	safeTest(t, "Test_SimpleStringOnce_Uint16_Core", func() {
 		// Arrange
 		valid := corestr.New.SimpleStringOnce.Init("500")
 
@@ -541,8 +541,8 @@ func Test_SimpleStringOnce_Uint16(t *testing.T) {
 	})
 }
 
-func Test_SimpleStringOnce_Uint32(t *testing.T) {
-	safeTest(t, "Test_SimpleStringOnce_Uint32", func() {
+func Test_SimpleStringOnce_Uint32_Core(t *testing.T) {
+	safeTest(t, "Test_SimpleStringOnce_Uint32_Core", func() {
 		// Arrange
 		valid := corestr.New.SimpleStringOnce.Init("100000")
 
@@ -607,8 +607,8 @@ func Test_SimpleStringOnce_WithinRange_AboveMax_WithBoundary(t *testing.T) {
 	})
 }
 
-func Test_SimpleStringOnce_WithinRange_NoBoundary(t *testing.T) {
-	safeTest(t, "Test_SimpleStringOnce_WithinRange_NoBoundary", func() {
+func Test_SimpleStringOnce_WithinRange_NoBoundary_Core(t *testing.T) {
+	safeTest(t, "Test_SimpleStringOnce_WithinRange_NoBoundary_Core", func() {
 		// Arrange
 		sso := corestr.New.SimpleStringOnce.Init("200")
 
@@ -943,8 +943,8 @@ func Test_SimpleStringOnce_IsAnyOf(t *testing.T) {
 	})
 }
 
-func Test_SimpleStringOnce_IsAnyOf_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleStringOnce_IsAnyOf_Empty", func() {
+func Test_SimpleStringOnce_IsAnyOf_Empty_Core(t *testing.T) {
+	safeTest(t, "Test_SimpleStringOnce_IsAnyOf_Empty_Core", func() {
 		// Arrange
 		sso := corestr.New.SimpleStringOnce.Init("x")
 
@@ -985,8 +985,8 @@ func Test_SimpleStringOnce_IsAnyContains(t *testing.T) {
 	})
 }
 
-func Test_SimpleStringOnce_IsAnyContains_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleStringOnce_IsAnyContains_Empty", func() {
+func Test_SimpleStringOnce_IsAnyContains_Empty_Core(t *testing.T) {
+	safeTest(t, "Test_SimpleStringOnce_IsAnyContains_Empty_Core", func() {
 		// Arrange
 		sso := corestr.New.SimpleStringOnce.Init("x")
 

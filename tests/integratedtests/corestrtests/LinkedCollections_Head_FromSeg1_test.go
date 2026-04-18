@@ -351,8 +351,8 @@ func Test_LinkedCollections_AddAsync_FromLCHeadLinkedCollSeg1(t *testing.T) {
 	})
 }
 
-func Test_LinkedCollections_AddsAsyncOnComplete(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_AddsAsyncOnComplete", func() {
+func Test_LinkedCollections_AddsAsyncOnComplete_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_AddsAsyncOnComplete_HeadSeg1", func() {
 		// Arrange
 		lc := corestr.New.LinkedCollection.Create()
 		done := make(chan bool, 1)
@@ -371,8 +371,8 @@ func Test_LinkedCollections_AddsAsyncOnComplete(t *testing.T) {
 	})
 }
 
-func Test_LinkedCollections_AddsUsingProcessorAsyncOnComplete(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_AddsUsingProcessorAsyncOnComplete", func() {
+func Test_LinkedCollections_AddsUsingProcessorAsyncOnComplete_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_AddsUsingProcessorAsyncOnComplete_HeadSeg1", func() {
 		// Arrange
 		lc := corestr.New.LinkedCollection.Create()
 		done := make(chan bool, 1)
@@ -393,8 +393,8 @@ func Test_LinkedCollections_AddsUsingProcessorAsyncOnComplete(t *testing.T) {
 	})
 }
 
-func Test_LinkedCollections_AddsUsingProcessorAsyncOnComplete_NilSkip(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_AddsUsingProcessorAsyncOnComplete_NilSkip", func() {
+func Test_LinkedCollections_AddsUsingProcessorAsyncOnComplete_NilSkip_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_AddsUsingProcessorAsyncOnComplete_NilSkip_HeadSeg1", func() {
 		// Arrange
 		lc := corestr.New.LinkedCollection.Create()
 		done := make(chan bool, 1)
@@ -417,8 +417,8 @@ func Test_LinkedCollections_AddsUsingProcessorAsyncOnComplete_NilSkip(t *testing
 	})
 }
 
-func Test_LinkedCollections_AddsUsingProcessorAsync(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_AddsUsingProcessorAsync", func() {
+func Test_LinkedCollections_AddsUsingProcessorAsync_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_AddsUsingProcessorAsync_HeadSeg1", func() {
 		// Arrange
 		lc := corestr.New.LinkedCollection.Create()
 		wg := &sync.WaitGroup{}
@@ -438,8 +438,8 @@ func Test_LinkedCollections_AddsUsingProcessorAsync(t *testing.T) {
 	})
 }
 
-func Test_LinkedCollections_AddsUsingProcessorAsync_NilSkip(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_AddsUsingProcessorAsync_NilSkip", func() {
+func Test_LinkedCollections_AddsUsingProcessorAsync_NilSkip_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_AddsUsingProcessorAsync_NilSkip_HeadSeg1", func() {
 		// Arrange
 		lc := corestr.New.LinkedCollection.Create()
 		wg := &sync.WaitGroup{}
@@ -1009,8 +1009,8 @@ func Test_LinkedCollections_FilterAsCollections_FromLCHeadLinkedCollSeg1(t *test
 	})
 }
 
-func Test_LinkedCollections_RemoveNodeByIndex_First(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_RemoveNodeByIndex_First", func() {
+func Test_LinkedCollections_RemoveNodeByIndex_First_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_RemoveNodeByIndex_First_HeadSeg1", func() {
 		// Arrange
 		lc := newLC([]string{"a"}, []string{"b"}, []string{"c"})
 		lc.RemoveNodeByIndex(0)
@@ -1030,8 +1030,8 @@ func Test_LinkedCollections_RemoveNodeByIndex_First(t *testing.T) {
 	})
 }
 
-func Test_LinkedCollections_RemoveNodeByIndex_Last(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_RemoveNodeByIndex_Last", func() {
+func Test_LinkedCollections_RemoveNodeByIndex_Last_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_RemoveNodeByIndex_Last_HeadSeg1", func() {
 		// Arrange
 		lc := newLC([]string{"a"}, []string{"b"}, []string{"c"})
 		lc.RemoveNodeByIndex(2)
@@ -1083,8 +1083,8 @@ func Test_LinkedCollections_RemoveNodeByIndex_Negative_Panics(t *testing.T) {
 	})
 }
 
-func Test_LinkedCollections_RemoveNodeByIndexes(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_RemoveNodeByIndexes", func() {
+func Test_LinkedCollections_RemoveNodeByIndexes_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_RemoveNodeByIndexes_HeadSeg1", func() {
 		// Arrange
 		lc := newLC([]string{"a"}, []string{"b"}, []string{"c"}, []string{"d"})
 		lc.RemoveNodeByIndexes(true, 1, 3)
@@ -1098,8 +1098,8 @@ func Test_LinkedCollections_RemoveNodeByIndexes(t *testing.T) {
 	})
 }
 
-func Test_LinkedCollections_RemoveNodeByIndexes_Empty(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_RemoveNodeByIndexes_Empty", func() {
+func Test_LinkedCollections_RemoveNodeByIndexes_Empty_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_RemoveNodeByIndexes_Empty_HeadSeg1", func() {
 		// Arrange
 		lc := newLC([]string{"a"})
 		lc.RemoveNodeByIndexes(true)
@@ -1136,8 +1136,8 @@ func Test_LinkedCollections_RemoveNodeByIndexes_EmptyPanics(t *testing.T) {
 	})
 }
 
-func Test_LinkedCollections_RemoveNode(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_RemoveNode", func() {
+func Test_LinkedCollections_RemoveNode_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_RemoveNode_HeadSeg1", func() {
 		// Arrange
 		lc := newLC([]string{"a"}, []string{"b"})
 		node := lc.Head()
@@ -1297,8 +1297,8 @@ func Test_LinkedCollections_AttachWithNode_NextNotNil_FromLCHeadLinkedCollSeg1(t
 	})
 }
 
-func Test_LinkedCollections_AddCollectionsToNodeAsync(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_AddCollectionsToNodeAsync", func() {
+func Test_LinkedCollections_AddCollectionsToNodeAsync_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_AddCollectionsToNodeAsync_HeadSeg1", func() {
 		// Arrange
 		lc := newLC([]string{"a"})
 		wg := &sync.WaitGroup{}
@@ -1317,8 +1317,8 @@ func Test_LinkedCollections_AddCollectionsToNodeAsync(t *testing.T) {
 	})
 }
 
-func Test_LinkedCollections_AddCollectionsToNodeAsync_NilSkip(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_AddCollectionsToNodeAsync_NilSkip", func() {
+func Test_LinkedCollections_AddCollectionsToNodeAsync_NilSkip_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_AddCollectionsToNodeAsync_NilSkip_HeadSeg1", func() {
 		// Arrange
 		lc := newLC([]string{"a"})
 		var cols []*corestr.Collection
@@ -1477,8 +1477,8 @@ func Test_LinkedCollections_AddCollectionsPointerToNode_MultiItems(t *testing.T)
 	})
 }
 
-func Test_LinkedCollections_AddAfterNode(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_AddAfterNode", func() {
+func Test_LinkedCollections_AddAfterNode_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_AddAfterNode_HeadSeg1", func() {
 		// Arrange
 		lc := newLC([]string{"a"}, []string{"c"})
 		node := lc.Head()
@@ -1494,8 +1494,8 @@ func Test_LinkedCollections_AddAfterNode(t *testing.T) {
 	})
 }
 
-func Test_LinkedCollections_AddAfterNodeAsync(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_AddAfterNodeAsync", func() {
+func Test_LinkedCollections_AddAfterNodeAsync_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_AddAfterNodeAsync_HeadSeg1", func() {
 		// Arrange
 		lc := newLC([]string{"a"})
 		wg := &sync.WaitGroup{}
@@ -1875,8 +1875,8 @@ func Test_LinkedCollections_SafeIndexAt_Zero(t *testing.T) {
 	})
 }
 
-func Test_LinkedCollections_AddStringsAsync(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_AddStringsAsync", func() {
+func Test_LinkedCollections_AddStringsAsync_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_AddStringsAsync_HeadSeg1", func() {
 		// Arrange
 		lc := corestr.New.LinkedCollection.Create()
 		wg := &sync.WaitGroup{}
@@ -1893,8 +1893,8 @@ func Test_LinkedCollections_AddStringsAsync(t *testing.T) {
 	})
 }
 
-func Test_LinkedCollections_AddStringsAsync_Nil(t *testing.T) {
-	safeTest(t, "Test_LinkedCollections_AddStringsAsync_Nil", func() {
+func Test_LinkedCollections_AddStringsAsync_Nil_HeadSeg1(t *testing.T) {
+	safeTest(t, "Test_LinkedCollections_AddStringsAsync_Nil_HeadSeg1", func() {
 		// Arrange
 		lc := corestr.New.LinkedCollection.Create()
 		lc.AddStringsAsync(nil, nil)

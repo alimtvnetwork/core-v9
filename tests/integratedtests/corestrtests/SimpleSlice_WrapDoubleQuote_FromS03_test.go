@@ -14,8 +14,8 @@ import (
 
 // --- Wrap methods ---
 
-func Test_SimpleSlice_WrapDoubleQuote(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_WrapDoubleQuote", func() {
+func Test_SimpleSlice_WrapDoubleQuote_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_WrapDoubleQuote_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		// Act
@@ -26,8 +26,8 @@ func Test_SimpleSlice_WrapDoubleQuote(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_WrapSingleQuote(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_WrapSingleQuote", func() {
+func Test_SimpleSlice_WrapSingleQuote_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_WrapSingleQuote_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		result := ss.WrapSingleQuote()
 		tc := caseV1Compat{Name: "WrapSingleQuote", Expected: 1, Actual: result.Length(), Args: args.Map{}}
@@ -37,8 +37,8 @@ func Test_SimpleSlice_WrapSingleQuote(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_WrapTildaQuote(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_WrapTildaQuote", func() {
+func Test_SimpleSlice_WrapTildaQuote_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_WrapTildaQuote_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		result := ss.WrapTildaQuote()
 		tc := caseV1Compat{Name: "WrapTildaQuote", Expected: 1, Actual: result.Length(), Args: args.Map{}}
@@ -48,8 +48,8 @@ func Test_SimpleSlice_WrapTildaQuote(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_WrapDoubleQuoteIfMissing(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_WrapDoubleQuoteIfMissing", func() {
+func Test_SimpleSlice_WrapDoubleQuoteIfMissing_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_WrapDoubleQuoteIfMissing_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		result := ss.WrapDoubleQuoteIfMissing()
 		tc := caseV1Compat{Name: "WrapDoubleQuoteIfMissing", Expected: 1, Actual: result.Length(), Args: args.Map{}}
@@ -59,8 +59,8 @@ func Test_SimpleSlice_WrapDoubleQuoteIfMissing(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_WrapSingleQuoteIfMissing(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_WrapSingleQuoteIfMissing", func() {
+func Test_SimpleSlice_WrapSingleQuoteIfMissing_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_WrapSingleQuoteIfMissing_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		result := ss.WrapSingleQuoteIfMissing()
 		tc := caseV1Compat{Name: "WrapSingleQuoteIfMissing", Expected: 1, Actual: result.Length(), Args: args.Map{}}
@@ -72,8 +72,8 @@ func Test_SimpleSlice_WrapSingleQuoteIfMissing(t *testing.T) {
 
 // --- Transpile ---
 
-func Test_SimpleSlice_Transpile(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Transpile", func() {
+func Test_SimpleSlice_Transpile_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Transpile_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("abc", "def")
 		result := ss.Transpile(func(s string) string { return s + "!" })
 		tc := caseV1Compat{Name: "Transpile first", Expected: "abc!", Actual: result.First(), Args: args.Map{}}
@@ -83,8 +83,8 @@ func Test_SimpleSlice_Transpile(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_Transpile_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Transpile_Empty", func() {
+func Test_SimpleSlice_Transpile_Empty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Transpile_Empty_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Cap(0)
 		result := ss.Transpile(func(s string) string { return s })
 		tc := caseV1Compat{Name: "Transpile empty", Expected: true, Actual: result.IsEmpty(), Args: args.Map{}}
@@ -94,8 +94,8 @@ func Test_SimpleSlice_Transpile_Empty(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_TranspileJoin(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_TranspileJoin", func() {
+func Test_SimpleSlice_TranspileJoin_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_TranspileJoin_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		result := ss.TranspileJoin(func(s string) string { return s + "!" }, ",")
 		tc := caseV1Compat{Name: "TranspileJoin", Expected: "a!,b!", Actual: result, Args: args.Map{}}
@@ -107,8 +107,8 @@ func Test_SimpleSlice_TranspileJoin(t *testing.T) {
 
 // --- Hashset ---
 
-func Test_SimpleSlice_Hashset(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Hashset", func() {
+func Test_SimpleSlice_Hashset_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Hashset_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b", "a")
 		hs := ss.Hashset()
 		tc := caseV1Compat{Name: "Hashset length", Expected: 2, Actual: hs.Length(), Args: args.Map{}}
@@ -120,8 +120,8 @@ func Test_SimpleSlice_Hashset(t *testing.T) {
 
 // --- Join variants ---
 
-func Test_SimpleSlice_Join_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Join_Empty", func() {
+func Test_SimpleSlice_Join_Empty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Join_Empty_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Cap(0)
 		tc := caseV1Compat{Name: "Join empty", Expected: "", Actual: ss.Join(","), Args: args.Map{}}
 
@@ -130,8 +130,8 @@ func Test_SimpleSlice_Join_Empty(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JoinLine(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JoinLine", func() {
+func Test_SimpleSlice_JoinLine_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JoinLine_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		result := ss.JoinLine()
@@ -145,8 +145,8 @@ func Test_SimpleSlice_JoinLine(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JoinLine_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JoinLine_Empty", func() {
+func Test_SimpleSlice_JoinLine_Empty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JoinLine_Empty_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Cap(0)
 		tc := caseV1Compat{Name: "JoinLine empty", Expected: "", Actual: ss.JoinLine(), Args: args.Map{}}
 
@@ -155,8 +155,8 @@ func Test_SimpleSlice_JoinLine_Empty(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JoinLineEofLine(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JoinLineEofLine", func() {
+func Test_SimpleSlice_JoinLineEofLine_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JoinLineEofLine_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		result := ss.JoinLineEofLine()
@@ -170,8 +170,8 @@ func Test_SimpleSlice_JoinLineEofLine(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JoinLineEofLine_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JoinLineEofLine_Empty", func() {
+func Test_SimpleSlice_JoinLineEofLine_Empty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JoinLineEofLine_Empty_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Cap(0)
 		tc := caseV1Compat{Name: "JoinLineEofLine empty", Expected: "", Actual: ss.JoinLineEofLine(), Args: args.Map{}}
 
@@ -180,8 +180,8 @@ func Test_SimpleSlice_JoinLineEofLine_Empty(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JoinSpace(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JoinSpace", func() {
+func Test_SimpleSlice_JoinSpace_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JoinSpace_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		tc := caseV1Compat{Name: "JoinSpace", Expected: "a b", Actual: ss.JoinSpace(), Args: args.Map{}}
 
@@ -190,8 +190,8 @@ func Test_SimpleSlice_JoinSpace(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JoinComma(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JoinComma", func() {
+func Test_SimpleSlice_JoinComma_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JoinComma_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		tc := caseV1Compat{Name: "JoinComma", Expected: "a,b", Actual: ss.JoinComma(), Args: args.Map{}}
 
@@ -200,8 +200,8 @@ func Test_SimpleSlice_JoinComma(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JoinCsv(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JoinCsv", func() {
+func Test_SimpleSlice_JoinCsv_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JoinCsv_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a")
 		result := ss.JoinCsv()
@@ -215,8 +215,8 @@ func Test_SimpleSlice_JoinCsv(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JoinCsvLine(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JoinCsvLine", func() {
+func Test_SimpleSlice_JoinCsvLine_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JoinCsvLine_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		result := ss.JoinCsvLine()
@@ -230,8 +230,8 @@ func Test_SimpleSlice_JoinCsvLine(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JoinWith(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JoinWith", func() {
+func Test_SimpleSlice_JoinWith_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JoinWith_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		result := ss.JoinWith("-")
 		tc := caseV1Compat{Name: "JoinWith", Expected: "-a-b", Actual: result, Args: args.Map{}}
@@ -241,8 +241,8 @@ func Test_SimpleSlice_JoinWith(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JoinWith_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JoinWith_Empty", func() {
+func Test_SimpleSlice_JoinWith_Empty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JoinWith_Empty_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Cap(0)
 		tc := caseV1Compat{Name: "JoinWith empty", Expected: "", Actual: ss.JoinWith("-"), Args: args.Map{}}
 
@@ -251,8 +251,8 @@ func Test_SimpleSlice_JoinWith_Empty(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JoinCsvString(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JoinCsvString", func() {
+func Test_SimpleSlice_JoinCsvString_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JoinCsvString_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a")
 		result := ss.JoinCsvString(",")
@@ -266,8 +266,8 @@ func Test_SimpleSlice_JoinCsvString(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JoinCsvString_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JoinCsvString_Empty", func() {
+func Test_SimpleSlice_JoinCsvString_Empty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JoinCsvString_Empty_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Cap(0)
 		tc := caseV1Compat{Name: "JoinCsvString empty", Expected: "", Actual: ss.JoinCsvString(","), Args: args.Map{}}
 
@@ -278,8 +278,8 @@ func Test_SimpleSlice_JoinCsvString_Empty(t *testing.T) {
 
 // --- EachItemSplitBy ---
 
-func Test_SimpleSlice_EachItemSplitBy(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_EachItemSplitBy", func() {
+func Test_SimpleSlice_EachItemSplitBy_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_EachItemSplitBy_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a.b", "c.d")
 		result := ss.EachItemSplitBy(".")
 		tc := caseV1Compat{Name: "EachItemSplitBy", Expected: 4, Actual: result.Length(), Args: args.Map{}}
@@ -291,8 +291,8 @@ func Test_SimpleSlice_EachItemSplitBy(t *testing.T) {
 
 // --- PrependJoin, AppendJoin, PrependAppend ---
 
-func Test_SimpleSlice_PrependJoin(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_PrependJoin", func() {
+func Test_SimpleSlice_PrependJoin_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_PrependJoin_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("b", "c")
 		result := ss.PrependJoin(",", "a")
 		tc := caseV1Compat{Name: "PrependJoin", Expected: "a,b,c", Actual: result, Args: args.Map{}}
@@ -302,8 +302,8 @@ func Test_SimpleSlice_PrependJoin(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_AppendJoin(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_AppendJoin", func() {
+func Test_SimpleSlice_AppendJoin_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_AppendJoin_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		result := ss.AppendJoin(",", "c")
 		tc := caseV1Compat{Name: "AppendJoin", Expected: "a,b,c", Actual: result, Args: args.Map{}}
@@ -313,8 +313,8 @@ func Test_SimpleSlice_AppendJoin(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_PrependAppend(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_PrependAppend", func() {
+func Test_SimpleSlice_PrependAppend_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_PrependAppend_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("b")
 		ss.PrependAppend([]string{"a"}, []string{"c"})
 		tc := caseV1Compat{Name: "PrependAppend length", Expected: 3, Actual: ss.Length(), Args: args.Map{}}
@@ -337,8 +337,8 @@ func Test_SimpleSlice_PrependAppend_EmptyBoth(t *testing.T) {
 
 // --- IsEqual variants ---
 
-func Test_SimpleSlice_IsEqual(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsEqual", func() {
+func Test_SimpleSlice_IsEqual_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsEqual_WrapDQ", func() {
 		a := corestr.New.SimpleSlice.Lines("a", "b")
 		b := corestr.New.SimpleSlice.Lines("a", "b")
 		tc := caseV1Compat{Name: "IsEqual true", Expected: true, Actual: a.IsEqual(b), Args: args.Map{}}
@@ -348,8 +348,8 @@ func Test_SimpleSlice_IsEqual(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsEqual_DiffLength(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsEqual_DiffLength", func() {
+func Test_SimpleSlice_IsEqual_DiffLength_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsEqual_DiffLength_WrapDQ", func() {
 		a := corestr.New.SimpleSlice.Lines("a")
 		b := corestr.New.SimpleSlice.Lines("a", "b")
 		tc := caseV1Compat{Name: "IsEqual diff len", Expected: false, Actual: a.IsEqual(b), Args: args.Map{}}
@@ -359,8 +359,8 @@ func Test_SimpleSlice_IsEqual_DiffLength(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsEqual_BothNil(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsEqual_BothNil", func() {
+func Test_SimpleSlice_IsEqual_BothNil_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsEqual_BothNil_WrapDQ", func() {
 		var a *corestr.SimpleSlice
 		var b *corestr.SimpleSlice
 		tc := caseV1Compat{Name: "IsEqual both nil", Expected: true, Actual: a.IsEqual(b), Args: args.Map{}}
@@ -370,8 +370,8 @@ func Test_SimpleSlice_IsEqual_BothNil(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsEqual_OneNil(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsEqual_OneNil", func() {
+func Test_SimpleSlice_IsEqual_OneNil_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsEqual_OneNil_WrapDQ", func() {
 		a := corestr.New.SimpleSlice.Lines("a")
 		var b *corestr.SimpleSlice
 		tc := caseV1Compat{Name: "IsEqual one nil", Expected: false, Actual: a.IsEqual(b), Args: args.Map{}}
@@ -381,8 +381,8 @@ func Test_SimpleSlice_IsEqual_OneNil(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsEqual_BothEmpty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsEqual_BothEmpty", func() {
+func Test_SimpleSlice_IsEqual_BothEmpty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsEqual_BothEmpty_WrapDQ", func() {
 		a := corestr.New.SimpleSlice.Cap(0)
 		b := corestr.New.SimpleSlice.Cap(0)
 		tc := caseV1Compat{Name: "IsEqual both empty", Expected: true, Actual: a.IsEqual(b), Args: args.Map{}}
@@ -392,8 +392,8 @@ func Test_SimpleSlice_IsEqual_BothEmpty(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsEqualLines(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsEqualLines", func() {
+func Test_SimpleSlice_IsEqualLines_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsEqualLines_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		tc := caseV1Compat{Name: "IsEqualLines true", Expected: true, Actual: ss.IsEqualLines([]string{"a", "b"}), Args: args.Map{}}
 
@@ -412,8 +412,8 @@ func Test_SimpleSlice_IsEqualLines_Mismatch(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsEqualUnorderedLines(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsEqualUnorderedLines", func() {
+func Test_SimpleSlice_IsEqualUnorderedLines_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsEqualUnorderedLines_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("b", "a")
 		tc := caseV1Compat{Name: "IsEqualUnorderedLines", Expected: true, Actual: ss.IsEqualUnorderedLines([]string{"a", "b"}), Args: args.Map{}}
 
@@ -432,8 +432,8 @@ func Test_SimpleSlice_IsEqualUnorderedLines_DiffLen(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsEqualUnorderedLinesClone(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsEqualUnorderedLinesClone", func() {
+func Test_SimpleSlice_IsEqualUnorderedLinesClone_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsEqualUnorderedLinesClone_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("b", "a")
 		tc := caseV1Compat{Name: "IsEqualUnorderedLinesClone", Expected: true, Actual: ss.IsEqualUnorderedLinesClone([]string{"a", "b"}), Args: args.Map{}}
 
@@ -442,8 +442,8 @@ func Test_SimpleSlice_IsEqualUnorderedLinesClone(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsEqualUnorderedLinesClone_Mismatch(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsEqualUnorderedLinesClone_Mismatch", func() {
+func Test_SimpleSlice_IsEqualUnorderedLinesClone_Mismatch_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsEqualUnorderedLinesClone_Mismatch_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		tc := caseV1Compat{Name: "IsEqualUnorderedLinesClone mismatch", Expected: false, Actual: ss.IsEqualUnorderedLinesClone([]string{"x", "y"}), Args: args.Map{}}
 
@@ -454,8 +454,8 @@ func Test_SimpleSlice_IsEqualUnorderedLinesClone_Mismatch(t *testing.T) {
 
 // --- IsContainsFunc, IndexOfFunc, IndexOf ---
 
-func Test_SimpleSlice_IsContainsFunc(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsContainsFunc", func() {
+func Test_SimpleSlice_IsContainsFunc_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsContainsFunc_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("abc", "def")
 		found := ss.IsContainsFunc("ab", func(item, search string) bool {
 			return len(item) >= 2 && item[:2] == search
@@ -467,8 +467,8 @@ func Test_SimpleSlice_IsContainsFunc(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsContainsFunc_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsContainsFunc_Empty", func() {
+func Test_SimpleSlice_IsContainsFunc_Empty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsContainsFunc_Empty_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Cap(0)
 		tc := caseV1Compat{Name: "IsContainsFunc empty", Expected: false, Actual: ss.IsContainsFunc("x", func(a, b string) bool { return a == b }), Args: args.Map{}}
 
@@ -477,8 +477,8 @@ func Test_SimpleSlice_IsContainsFunc_Empty(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IndexOfFunc(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IndexOfFunc", func() {
+func Test_SimpleSlice_IndexOfFunc_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IndexOfFunc_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("abc", "def")
 		idx := ss.IndexOfFunc("def", func(item, search string) bool { return item == search })
 		tc := caseV1Compat{Name: "IndexOfFunc", Expected: 1, Actual: idx, Args: args.Map{}}
@@ -488,8 +488,8 @@ func Test_SimpleSlice_IndexOfFunc(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IndexOfFunc_NotFound(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IndexOfFunc_NotFound", func() {
+func Test_SimpleSlice_IndexOfFunc_NotFound_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IndexOfFunc_NotFound_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		idx := ss.IndexOfFunc("z", func(item, search string) bool { return item == search })
 		tc := caseV1Compat{Name: "IndexOfFunc not found", Expected: -1, Actual: idx, Args: args.Map{}}
@@ -499,8 +499,8 @@ func Test_SimpleSlice_IndexOfFunc_NotFound(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IndexOfFunc_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IndexOfFunc_Empty", func() {
+func Test_SimpleSlice_IndexOfFunc_Empty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IndexOfFunc_Empty_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Cap(0)
 		tc := caseV1Compat{Name: "IndexOfFunc empty", Expected: -1, Actual: ss.IndexOfFunc("x", func(a, b string) bool { return a == b }), Args: args.Map{}}
 
@@ -509,8 +509,8 @@ func Test_SimpleSlice_IndexOfFunc_Empty(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IndexOf(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IndexOf", func() {
+func Test_SimpleSlice_IndexOf_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IndexOf_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b", "c")
 		tc := caseV1Compat{Name: "IndexOf", Expected: 1, Actual: ss.IndexOf("b"), Args: args.Map{}}
 
@@ -531,8 +531,8 @@ func Test_SimpleSlice_IndexOf_NotFound(t *testing.T) {
 
 // --- HasIndex, HasAnyItem ---
 
-func Test_SimpleSlice_HasIndex(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_HasIndex", func() {
+func Test_SimpleSlice_HasIndex_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_HasIndex_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		tc := caseV1Compat{Name: "HasIndex true", Expected: true, Actual: ss.HasIndex(1), Args: args.Map{}}
 
@@ -561,8 +561,8 @@ func Test_SimpleSlice_HasIndex_Negative(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_HasAnyItem(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_HasAnyItem", func() {
+func Test_SimpleSlice_HasAnyItem_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_HasAnyItem_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		tc := caseV1Compat{Name: "HasAnyItem", Expected: true, Actual: ss.HasAnyItem(), Args: args.Map{}}
 
@@ -583,8 +583,8 @@ func Test_SimpleSlice_HasAnyItem_Empty(t *testing.T) {
 
 // --- Strings, NonPtr, Ptr, ToPtr, ToNonPtr ---
 
-func Test_SimpleSlice_Strings(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Strings", func() {
+func Test_SimpleSlice_Strings_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Strings_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		tc := caseV1Compat{Name: "Strings", Expected: 1, Actual: len(ss.Strings()), Args: args.Map{}}
 
@@ -647,8 +647,8 @@ func Test_SimpleSlice_ToNonPtr(t *testing.T) {
 
 // --- String (empty) ---
 
-func Test_SimpleSlice_String_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_String_Empty", func() {
+func Test_SimpleSlice_String_Empty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_String_Empty_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Cap(0)
 		tc := caseV1Compat{Name: "String empty", Expected: "", Actual: ss.String(), Args: args.Map{}}
 
@@ -659,8 +659,8 @@ func Test_SimpleSlice_String_Empty(t *testing.T) {
 
 // --- ConcatNew variants ---
 
-func Test_SimpleSlice_ConcatNew(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_ConcatNew", func() {
+func Test_SimpleSlice_ConcatNew_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_ConcatNew_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		result := ss.ConcatNew("b", "c")
 		tc := caseV1Compat{Name: "ConcatNew", Expected: 3, Actual: result.Length(), Args: args.Map{}}
@@ -670,8 +670,8 @@ func Test_SimpleSlice_ConcatNew(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_ConcatNewStrings(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_ConcatNewStrings", func() {
+func Test_SimpleSlice_ConcatNewStrings_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_ConcatNewStrings_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		result := ss.ConcatNewStrings("b")
 		tc := caseV1Compat{Name: "ConcatNewStrings", Expected: 2, Actual: len(result), Args: args.Map{}}
@@ -681,8 +681,8 @@ func Test_SimpleSlice_ConcatNewStrings(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_ConcatNewSimpleSlices(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_ConcatNewSimpleSlices", func() {
+func Test_SimpleSlice_ConcatNewSimpleSlices_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_ConcatNewSimpleSlices_WrapDQ", func() {
 		a := corestr.New.SimpleSlice.Lines("a")
 		b := corestr.New.SimpleSlice.Lines("b")
 		result := a.ConcatNewSimpleSlices(b)
@@ -695,8 +695,8 @@ func Test_SimpleSlice_ConcatNewSimpleSlices(t *testing.T) {
 
 // --- Collection, ToCollection ---
 
-func Test_SimpleSlice_Collection(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Collection", func() {
+func Test_SimpleSlice_Collection_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Collection_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		c := ss.Collection(false)
 		tc := caseV1Compat{Name: "Collection", Expected: 2, Actual: c.Length(), Args: args.Map{}}
@@ -706,8 +706,8 @@ func Test_SimpleSlice_Collection(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_ToCollection(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_ToCollection", func() {
+func Test_SimpleSlice_ToCollection_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_ToCollection_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		c := ss.ToCollection(true)
 		tc := caseV1Compat{Name: "ToCollection", Expected: 1, Actual: c.Length(), Args: args.Map{}}
@@ -719,8 +719,8 @@ func Test_SimpleSlice_ToCollection(t *testing.T) {
 
 // --- CsvStrings ---
 
-func Test_SimpleSlice_CsvStrings(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_CsvStrings", func() {
+func Test_SimpleSlice_CsvStrings_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_CsvStrings_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		result := ss.CsvStrings()
 		tc := caseV1Compat{Name: "CsvStrings", Expected: 1, Actual: len(result), Args: args.Map{}}
@@ -730,8 +730,8 @@ func Test_SimpleSlice_CsvStrings(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_CsvStrings_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_CsvStrings_Empty", func() {
+func Test_SimpleSlice_CsvStrings_Empty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_CsvStrings_Empty_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Cap(0)
 		result := ss.CsvStrings()
 		tc := caseV1Compat{Name: "CsvStrings empty", Expected: 0, Actual: len(result), Args: args.Map{}}
@@ -743,8 +743,8 @@ func Test_SimpleSlice_CsvStrings_Empty(t *testing.T) {
 
 // --- Sort, Reverse ---
 
-func Test_SimpleSlice_Sort(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Sort", func() {
+func Test_SimpleSlice_Sort_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Sort_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("c", "a", "b")
 		ss.Sort()
 		tc := caseV1Compat{Name: "Sort first", Expected: "a", Actual: ss.First(), Args: args.Map{}}
@@ -789,8 +789,8 @@ func Test_SimpleSlice_Reverse_Single(t *testing.T) {
 
 // --- JsonModel, JsonModelAny, AsJson* ---
 
-func Test_SimpleSlice_JsonModel(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JsonModel", func() {
+func Test_SimpleSlice_JsonModel_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JsonModel_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		m := ss.JsonModel()
 		tc := caseV1Compat{Name: "JsonModel", Expected: 1, Actual: len(m), Args: args.Map{}}
@@ -800,8 +800,8 @@ func Test_SimpleSlice_JsonModel(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JsonModelAny(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JsonModelAny", func() {
+func Test_SimpleSlice_JsonModelAny_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JsonModelAny_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a")
 		a := ss.JsonModelAny()
@@ -815,8 +815,8 @@ func Test_SimpleSlice_JsonModelAny(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_AsJsonContractsBinder(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_AsJsonContractsBinder", func() {
+func Test_SimpleSlice_AsJsonContractsBinder_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_AsJsonContractsBinder_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a")
 		b := ss.AsJsonContractsBinder()
@@ -830,8 +830,8 @@ func Test_SimpleSlice_AsJsonContractsBinder(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_AsJsoner(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_AsJsoner", func() {
+func Test_SimpleSlice_AsJsoner_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_AsJsoner_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a")
 		j := ss.AsJsoner()
@@ -845,8 +845,8 @@ func Test_SimpleSlice_AsJsoner(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_AsJsonParseSelfInjector(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_AsJsonParseSelfInjector", func() {
+func Test_SimpleSlice_AsJsonParseSelfInjector_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_AsJsonParseSelfInjector_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a")
 		inj := ss.AsJsonParseSelfInjector()
@@ -860,8 +860,8 @@ func Test_SimpleSlice_AsJsonParseSelfInjector(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_AsJsonMarshaller(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_AsJsonMarshaller", func() {
+func Test_SimpleSlice_AsJsonMarshaller_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_AsJsonMarshaller_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a")
 		m := ss.AsJsonMarshaller()
@@ -875,8 +875,8 @@ func Test_SimpleSlice_AsJsonMarshaller(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_JsonParseSelfInject(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_JsonParseSelfInject", func() {
+func Test_SimpleSlice_JsonParseSelfInject_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_JsonParseSelfInject_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a")
 		jr := ss.JsonPtr()
@@ -892,8 +892,8 @@ func Test_SimpleSlice_JsonParseSelfInject(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_ParseInjectUsingJsonMust(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_ParseInjectUsingJsonMust", func() {
+func Test_SimpleSlice_ParseInjectUsingJsonMust_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_ParseInjectUsingJsonMust_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		jr := ss.JsonPtr()
 		ss2 := corestr.New.SimpleSlice.Cap(0)
@@ -924,8 +924,8 @@ func Test_SimpleSlice_UnmarshalJSON_Invalid(t *testing.T) {
 
 // --- Clear, Dispose ---
 
-func Test_SimpleSlice_Clear(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Clear", func() {
+func Test_SimpleSlice_Clear_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Clear_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		ss.Clear()
 		tc := caseV1Compat{Name: "Clear", Expected: 0, Actual: ss.Length(), Args: args.Map{}}
@@ -935,8 +935,8 @@ func Test_SimpleSlice_Clear(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_Clear_Nil(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Clear_Nil", func() {
+func Test_SimpleSlice_Clear_Nil_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Clear_Nil_WrapDQ", func() {
 		// Arrange
 		var ss *corestr.SimpleSlice
 		result := ss.Clear()
@@ -950,8 +950,8 @@ func Test_SimpleSlice_Clear_Nil(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_Dispose(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Dispose", func() {
+func Test_SimpleSlice_Dispose_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Dispose_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		ss.Dispose()
 		tc := caseV1Compat{Name: "Dispose", Expected: 0, Actual: ss.Length(), Args: args.Map{}}
@@ -961,8 +961,8 @@ func Test_SimpleSlice_Dispose(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_Dispose_Nil(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Dispose_Nil", func() {
+func Test_SimpleSlice_Dispose_Nil_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Dispose_Nil_WrapDQ", func() {
 		var ss *corestr.SimpleSlice
 		ss.Dispose()
 	})
@@ -970,8 +970,8 @@ func Test_SimpleSlice_Dispose_Nil(t *testing.T) {
 
 // --- Clone, ClonePtr, DeepClone, ShadowClone ---
 
-func Test_SimpleSlice_Clone(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Clone", func() {
+func Test_SimpleSlice_Clone_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Clone_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		cloned := ss.Clone(true)
 		tc := caseV1Compat{Name: "Clone length", Expected: 2, Actual: cloned.Length(), Args: args.Map{}}
@@ -981,8 +981,8 @@ func Test_SimpleSlice_Clone(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_ClonePtr(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_ClonePtr", func() {
+func Test_SimpleSlice_ClonePtr_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_ClonePtr_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a")
 		cloned := ss.ClonePtr(true)
@@ -998,8 +998,8 @@ func Test_SimpleSlice_ClonePtr(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_ClonePtr_Nil(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_ClonePtr_Nil", func() {
+func Test_SimpleSlice_ClonePtr_Nil_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_ClonePtr_Nil_WrapDQ", func() {
 		// Arrange
 		var ss *corestr.SimpleSlice
 		cloned := ss.ClonePtr(true)
@@ -1013,8 +1013,8 @@ func Test_SimpleSlice_ClonePtr_Nil(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_DeepClone(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_DeepClone", func() {
+func Test_SimpleSlice_DeepClone_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_DeepClone_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		cloned := ss.DeepClone()
 		tc := caseV1Compat{Name: "DeepClone", Expected: 1, Actual: cloned.Length(), Args: args.Map{}}
@@ -1024,8 +1024,8 @@ func Test_SimpleSlice_DeepClone(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_ShadowClone(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_ShadowClone", func() {
+func Test_SimpleSlice_ShadowClone_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_ShadowClone_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a")
 		cloned := ss.ShadowClone()
 		tc := caseV1Compat{Name: "ShadowClone", Expected: 1, Actual: cloned.Length(), Args: args.Map{}}
@@ -1037,8 +1037,8 @@ func Test_SimpleSlice_ShadowClone(t *testing.T) {
 
 // --- IsDistinctEqual, IsDistinctEqualRaw ---
 
-func Test_SimpleSlice_IsDistinctEqualRaw(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsDistinctEqualRaw", func() {
+func Test_SimpleSlice_IsDistinctEqualRaw_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsDistinctEqualRaw_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b", "a")
 		tc := caseV1Compat{Name: "IsDistinctEqualRaw", Expected: true, Actual: ss.IsDistinctEqualRaw("b", "a"), Args: args.Map{}}
 
@@ -1047,8 +1047,8 @@ func Test_SimpleSlice_IsDistinctEqualRaw(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsDistinctEqual(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsDistinctEqual", func() {
+func Test_SimpleSlice_IsDistinctEqual_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsDistinctEqual_WrapDQ", func() {
 		a := corestr.New.SimpleSlice.Lines("a", "b")
 		b := corestr.New.SimpleSlice.Lines("b", "a")
 		tc := caseV1Compat{Name: "IsDistinctEqual", Expected: true, Actual: a.IsDistinctEqual(b), Args: args.Map{}}
@@ -1060,8 +1060,8 @@ func Test_SimpleSlice_IsDistinctEqual(t *testing.T) {
 
 // --- IsUnorderedEqual, IsUnorderedEqualRaw ---
 
-func Test_SimpleSlice_IsUnorderedEqualRaw_Clone(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsUnorderedEqualRaw_Clone", func() {
+func Test_SimpleSlice_IsUnorderedEqualRaw_Clone_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsUnorderedEqualRaw_Clone_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("b", "a")
 		tc := caseV1Compat{Name: "IsUnorderedEqualRaw clone", Expected: true, Actual: ss.IsUnorderedEqualRaw(true, "a", "b"), Args: args.Map{}}
 
@@ -1070,8 +1070,8 @@ func Test_SimpleSlice_IsUnorderedEqualRaw_Clone(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsUnorderedEqualRaw_NoClone(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsUnorderedEqualRaw_NoClone", func() {
+func Test_SimpleSlice_IsUnorderedEqualRaw_NoClone_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsUnorderedEqualRaw_NoClone_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("b", "a")
 		tc := caseV1Compat{Name: "IsUnorderedEqualRaw no clone", Expected: true, Actual: ss.IsUnorderedEqualRaw(false, "a", "b"), Args: args.Map{}}
 
@@ -1100,8 +1100,8 @@ func Test_SimpleSlice_IsUnorderedEqualRaw_Empty(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsUnorderedEqual(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsUnorderedEqual", func() {
+func Test_SimpleSlice_IsUnorderedEqual_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsUnorderedEqual_WrapDQ", func() {
 		a := corestr.New.SimpleSlice.Lines("b", "a")
 		b := corestr.New.SimpleSlice.Lines("a", "b")
 		tc := caseV1Compat{Name: "IsUnorderedEqual", Expected: true, Actual: a.IsUnorderedEqual(true, b), Args: args.Map{}}
@@ -1111,8 +1111,8 @@ func Test_SimpleSlice_IsUnorderedEqual(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsUnorderedEqual_BothEmpty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsUnorderedEqual_BothEmpty", func() {
+func Test_SimpleSlice_IsUnorderedEqual_BothEmpty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsUnorderedEqual_BothEmpty_WrapDQ", func() {
 		a := corestr.New.SimpleSlice.Cap(0)
 		b := corestr.New.SimpleSlice.Cap(0)
 		tc := caseV1Compat{Name: "IsUnorderedEqual empty", Expected: true, Actual: a.IsUnorderedEqual(false, b), Args: args.Map{}}
@@ -1122,8 +1122,8 @@ func Test_SimpleSlice_IsUnorderedEqual_BothEmpty(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsUnorderedEqual_NilRight(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsUnorderedEqual_NilRight", func() {
+func Test_SimpleSlice_IsUnorderedEqual_NilRight_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsUnorderedEqual_NilRight_WrapDQ", func() {
 		a := corestr.New.SimpleSlice.Lines("a")
 		tc := caseV1Compat{Name: "IsUnorderedEqual nil right", Expected: false, Actual: a.IsUnorderedEqual(false, nil), Args: args.Map{}}
 
@@ -1134,8 +1134,8 @@ func Test_SimpleSlice_IsUnorderedEqual_NilRight(t *testing.T) {
 
 // --- IsEqualByFunc ---
 
-func Test_SimpleSlice_IsEqualByFunc(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsEqualByFunc", func() {
+func Test_SimpleSlice_IsEqualByFunc_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsEqualByFunc_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		result := ss.IsEqualByFunc(func(i int, l, r string) bool { return l == r }, "a", "b")
 		tc := caseV1Compat{Name: "IsEqualByFunc", Expected: true, Actual: result, Args: args.Map{}}
@@ -1145,8 +1145,8 @@ func Test_SimpleSlice_IsEqualByFunc(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsEqualByFunc_Mismatch(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsEqualByFunc_Mismatch", func() {
+func Test_SimpleSlice_IsEqualByFunc_Mismatch_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsEqualByFunc_Mismatch_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		result := ss.IsEqualByFunc(func(i int, l, r string) bool { return l == r }, "a", "x")
 		tc := caseV1Compat{Name: "IsEqualByFunc mismatch", Expected: false, Actual: result, Args: args.Map{}}
@@ -1180,8 +1180,8 @@ func Test_SimpleSlice_IsEqualByFunc_Empty(t *testing.T) {
 
 // --- IsEqualByFuncLinesSplit ---
 
-func Test_SimpleSlice_IsEqualByFuncLinesSplit(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsEqualByFuncLinesSplit", func() {
+func Test_SimpleSlice_IsEqualByFuncLinesSplit_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsEqualByFuncLinesSplit_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		result := ss.IsEqualByFuncLinesSplit(false, ",", "a,b", func(i int, l, r string) bool { return l == r })
 		tc := caseV1Compat{Name: "IsEqualByFuncLinesSplit", Expected: true, Actual: result, Args: args.Map{}}
@@ -1213,8 +1213,8 @@ func Test_SimpleSlice_IsEqualByFuncLinesSplit_DiffLen(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_IsEqualByFuncLinesSplit_Mismatch(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsEqualByFuncLinesSplit_Mismatch", func() {
+func Test_SimpleSlice_IsEqualByFuncLinesSplit_Mismatch_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsEqualByFuncLinesSplit_Mismatch_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		result := ss.IsEqualByFuncLinesSplit(false, ",", "a,x", func(i int, l, r string) bool { return l == r })
 		tc := caseV1Compat{Name: "IsEqualByFuncLinesSplit mismatch", Expected: false, Actual: result, Args: args.Map{}}
@@ -1226,8 +1226,8 @@ func Test_SimpleSlice_IsEqualByFuncLinesSplit_Mismatch(t *testing.T) {
 
 // --- DistinctDiffRaw, DistinctDiff ---
 
-func Test_SimpleSlice_DistinctDiffRaw(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_DistinctDiffRaw", func() {
+func Test_SimpleSlice_DistinctDiffRaw_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_DistinctDiffRaw_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		result := ss.DistinctDiffRaw("b", "c")
@@ -1241,8 +1241,8 @@ func Test_SimpleSlice_DistinctDiffRaw(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_DistinctDiffRaw_BothNil(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_DistinctDiffRaw_BothNil", func() {
+func Test_SimpleSlice_DistinctDiffRaw_BothNil_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_DistinctDiffRaw_BothNil_WrapDQ", func() {
 		var ss *corestr.SimpleSlice
 		result := ss.DistinctDiffRaw()
 		tc := caseV1Compat{Name: "DistinctDiffRaw nil", Expected: 0, Actual: len(result), Args: args.Map{}}
@@ -1274,8 +1274,8 @@ func Test_SimpleSlice_DistinctDiffRaw_NilRight(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_DistinctDiff(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_DistinctDiff", func() {
+func Test_SimpleSlice_DistinctDiff_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_DistinctDiff_WrapDQ", func() {
 		// Arrange
 		a := corestr.New.SimpleSlice.Lines("a", "b")
 		b := corestr.New.SimpleSlice.Lines("b", "c")
@@ -1290,8 +1290,8 @@ func Test_SimpleSlice_DistinctDiff(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_DistinctDiff_BothNil(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_DistinctDiff_BothNil", func() {
+func Test_SimpleSlice_DistinctDiff_BothNil_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_DistinctDiff_BothNil_WrapDQ", func() {
 		var a *corestr.SimpleSlice
 		var b *corestr.SimpleSlice
 		result := a.DistinctDiff(b)
@@ -1327,8 +1327,8 @@ func Test_SimpleSlice_DistinctDiff_NilRight(t *testing.T) {
 
 // --- AddedRemovedLinesDiff ---
 
-func Test_SimpleSlice_AddedRemovedLinesDiff(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_AddedRemovedLinesDiff", func() {
+func Test_SimpleSlice_AddedRemovedLinesDiff_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_AddedRemovedLinesDiff_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		added, removed := ss.AddedRemovedLinesDiff("b", "c")
@@ -1345,8 +1345,8 @@ func Test_SimpleSlice_AddedRemovedLinesDiff(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_AddedRemovedLinesDiff_BothNil(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_AddedRemovedLinesDiff_BothNil", func() {
+func Test_SimpleSlice_AddedRemovedLinesDiff_BothNil_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_AddedRemovedLinesDiff_BothNil_WrapDQ", func() {
 		// Arrange
 		var ss *corestr.SimpleSlice
 		added, removed := ss.AddedRemovedLinesDiff()
@@ -1362,8 +1362,8 @@ func Test_SimpleSlice_AddedRemovedLinesDiff_BothNil(t *testing.T) {
 
 // --- RemoveIndexes edge cases ---
 
-func Test_SimpleSlice_RemoveIndexes_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_RemoveIndexes_Empty", func() {
+func Test_SimpleSlice_RemoveIndexes_Empty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_RemoveIndexes_Empty_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Cap(0)
 		_, err := ss.RemoveIndexes(0)
@@ -1377,8 +1377,8 @@ func Test_SimpleSlice_RemoveIndexes_Empty(t *testing.T) {
 	})
 }
 
-func Test_SimpleSlice_RemoveIndexes_InvalidIndex(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_RemoveIndexes_InvalidIndex", func() {
+func Test_SimpleSlice_RemoveIndexes_InvalidIndex_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_RemoveIndexes_InvalidIndex_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		result, err := ss.RemoveIndexes(99)
@@ -1397,8 +1397,8 @@ func Test_SimpleSlice_RemoveIndexes_InvalidIndex(t *testing.T) {
 
 // --- Deserialize ---
 
-func Test_SimpleSlice_Deserialize(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Deserialize", func() {
+func Test_SimpleSlice_Deserialize_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Deserialize_WrapDQ", func() {
 		// Arrange
 		ss := corestr.New.SimpleSlice.Lines("a", "b")
 		var target []string
@@ -1417,8 +1417,8 @@ func Test_SimpleSlice_Deserialize(t *testing.T) {
 
 // --- CountFunc empty ---
 
-func Test_SimpleSlice_CountFunc_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_CountFunc_Empty", func() {
+func Test_SimpleSlice_CountFunc_Empty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_CountFunc_Empty_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Cap(0)
 		c := ss.CountFunc(func(i int, s string) bool { return true })
 		tc := caseV1Compat{Name: "CountFunc empty", Expected: 0, Actual: c, Args: args.Map{}}
@@ -1430,8 +1430,8 @@ func Test_SimpleSlice_CountFunc_Empty(t *testing.T) {
 
 // --- IsContains empty ---
 
-func Test_SimpleSlice_IsContains_Empty(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_IsContains_Empty", func() {
+func Test_SimpleSlice_IsContains_Empty_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_IsContains_Empty_WrapDQ", func() {
 		ss := corestr.New.SimpleSlice.Cap(0)
 		tc := caseV1Compat{Name: "IsContains empty", Expected: false, Actual: ss.IsContains("x"), Args: args.Map{}}
 
@@ -1442,8 +1442,8 @@ func Test_SimpleSlice_IsContains_Empty(t *testing.T) {
 
 // --- Length nil ---
 
-func Test_SimpleSlice_Length_Nil(t *testing.T) {
-	safeTest(t, "Test_SimpleSlice_Length_Nil", func() {
+func Test_SimpleSlice_Length_Nil_WrapDQ(t *testing.T) {
+	safeTest(t, "Test_SimpleSlice_Length_Nil_WrapDQ", func() {
 		var ss *corestr.SimpleSlice
 		tc := caseV1Compat{Name: "Length nil", Expected: 0, Actual: ss.Length(), Args: args.Map{}}
 
