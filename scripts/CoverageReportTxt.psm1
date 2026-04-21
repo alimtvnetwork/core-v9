@@ -21,7 +21,7 @@ function Build-SourcePackageCoverage {
             $filePath = $Matches[1]
             $stmts = [int]$Matches[6]
             $count = [int]$Matches[7]
-            $shortSrc = $filePath -replace '.*alimtvnetwork/core/?', ''
+            $shortSrc = $filePath -replace '.*alimtvnetwork/core-v8/?', ''
             $shortSrc = $shortSrc -replace '/[^/]+$', ''
             if (-not $shortSrc) { $shortSrc = "(root)" }
             if (-not $srcPkgStmts.Contains($shortSrc)) {
