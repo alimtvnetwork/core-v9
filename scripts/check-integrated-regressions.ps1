@@ -42,7 +42,7 @@ function Get-CoreTestCasesAliases([string]$rawFileContent) {
     $aliases = [System.Collections.Generic.HashSet[string]]::new([System.StringComparer]::Ordinal)
     $importMatches = [regex]::Matches(
         $rawFileContent,
-        '(?m)^\s*(?:(?<alias>[A-Za-z_]\w*)\s+)?"github\.com/alimtvnetwork/core/coretests/coretestcases"'
+        '(?m)^\s*(?:(?<alias>[A-Za-z_]\w*)\s+)?"github\.com/alimtvnetwork/core-v8/coretests/coretestcases"'
     )
 
     foreach ($m in $importMatches) {

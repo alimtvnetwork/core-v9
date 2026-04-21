@@ -59,7 +59,7 @@ function Invoke-TestCoverage {
 
     $inPkgTestPkgs = @()
     foreach ($srcPkg in $srcPkgs) {
-        $relPath = $srcPkg -replace '^github\.com/alimtvnetwork/core/', ''
+        $relPath = $srcPkg -replace '^github\.com/alimtvnetwork/core-v8/', ''
         if ($relPath -and (Test-Path $relPath) -and (Get-ChildItem -Path $relPath -Filter '*_test.go' -File -ErrorAction SilentlyContinue)) {
             $inPkgTestPkgs += $srcPkg
         }
