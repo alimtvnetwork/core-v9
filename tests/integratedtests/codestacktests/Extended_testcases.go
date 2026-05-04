@@ -892,3 +892,9 @@ var (
 	_ = extNewTraceCollectionUsingTestCases
 	_ = extNewTraceCollectionEmptyTestCases
 )
+
+var (
+	_ = extNewTraceCollectionCapTestCases
+	_ = extNewTraceCollectionDefaultTestCases
+	_ = extNewTraceCollectionUsingTestCases
+)

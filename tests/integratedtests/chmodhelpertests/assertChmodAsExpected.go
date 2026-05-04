@@ -44,3 +44,5 @@ func assertTestCaseChmodAsExpected(
 			expectedChmod)
 	}
 }
+
+var _ = assertTestCaseChmodAsExpected

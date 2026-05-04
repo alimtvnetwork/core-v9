@@ -203,3 +203,5 @@ var extChmodVerifierTestCases = []coretestcases.CaseV1{
 		},
 	},
 }
+
+var _ = extChmodVerifierTestCases
