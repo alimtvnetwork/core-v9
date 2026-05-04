@@ -17,9 +17,15 @@ linters:
     staticcheck:
       checks:
         - all
-        - -ST1005
-        - -ST1012
-        - -SA1019
+        # Style/legacy nits not enforced — preserved for API stability:
+        - -ST1000   # package comment requirement
+        - -ST1003   # initialism casing (Json/Url/Ip/Http/Id) — would break API
+        - -ST1005   # error string capitalisation/punctuation
+        - -ST1012   # error variable naming (ErrFoo)
+        - -ST1020   # exported method comment form
+        - -ST1021   # exported type comment form
+        - -ST1022   # exported var comment form
+        - -SA1019   # deprecated APIs (io/ioutil, runtime.GOROOT) — tracked separately
 
   exclusions:
     generated: lax
@@ -29,40 +35,22 @@ linters:
       - std-error-handling
     rules:
       - path: _test\.go
-        linters:
-          - errcheck
-          - unused
-          - staticcheck
-          - ineffassign
-          - govet
+        linters: [errcheck, unused, staticcheck, ineffassign, govet]
       - path: tests/
-        linters:
-          - errcheck
-          - unused
-          - staticcheck
-          - ineffassign
-          - govet
+        linters: [errcheck, unused, staticcheck, ineffassign, govet]
       - path: testwrappers/
-        linters:
-          - errcheck
-          - unused
-          - staticcheck
-          - ineffassign
-          - govet
+        linters: [errcheck, unused, staticcheck, ineffassign, govet]
       - path: benchmark_test\.go
-        linters:
-          - errcheck
+        linters: [errcheck]
       - path: cmd/main/
-        linters:
-          - errcheck
-          - unused
-          - staticcheck
-          - ineffassign
+        linters: [errcheck, unused, staticcheck, ineffassign]
       - path: scripts/autofix/
-        linters:
-          - ineffassign
-          - staticcheck
+        linters: [ineffassign, staticcheck]
+      # Once-based types embed sync.Once; value-receiver API is preserved
+      # for backward compatibility (tracked for next major version).
       - path: coredata/(coredynamic|coreonce|corestr)/
-        linters:
-          - govet
+        linters: [govet]
+        text: "copylocks"
+      - path: coreimpl/enumimpl/
+        linters: [govet]
         text: "copylocks"
