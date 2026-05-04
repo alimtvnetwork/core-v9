@@ -119,3 +119,5 @@ var traceCollectionFilterTestCases = []coretestcases.CaseV1{
 		},
 	},
 }
+
+var _ = traceCollectionSkipTakeTestCases

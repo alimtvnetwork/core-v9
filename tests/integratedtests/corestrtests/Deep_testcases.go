@@ -249,3 +249,5 @@ var srcC11AllIndStrLenTestCase = coretestcases.CaseV1{
 		"nilLen":  0,
 	},
 }
+
+var _ = srcC11HashmapAddVariantsTestCase

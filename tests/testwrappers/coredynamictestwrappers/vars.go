@@ -38,3 +38,5 @@ var (
 
 	nilBytes []byte = nil
 )
+
+var _ = nilBytes
