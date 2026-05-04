@@ -1,3 +1,8 @@
+# v1.9.2 : fix Collection.AddStringsAsync race and CastAny Result test expectations
+
+- #1 : `coredata/corestr/Collection.AddStringsAsync` now relies on per-item `AddLock` inside each goroutine instead of taking a single `Lock()` that was released before the goroutines ran. This eliminates the data race reported by `go test -race` in `Test_Collection_AddStringsAsync` and `Test_Collection_AddStringsAsync_CollectionBasicmethods`.
+- #2 : Update `Test_CastAny_Result` and `Test_CastAny_ResultPtr` to expect successful deserialization (`hasErr: false`) now that `CastAny` correctly dispatches `Result` / `*Result` cases ahead of the `Jsoner` path (no more double-marshal).
+
 # v1.9.1 : lint cleanup for production helpers and remaining test fixtures
 
 - #1 : Add `//nolint:unused` directives on intentionally retained production helpers (`LinkedCollections.incrementLengthLock`, `DynamicMap.isEqualSingle`, `newBasicStringCreator.sliceNamesToMap`, `SimpleTestCase.noPrintAssert`, `FuncWrap.in/outArgsMap`, `assertDiffOnMismatch`, `reflectPath.pathName`, `reflectcore` re-exported helpers, `autofix.rxOnlyCloseParen`)
