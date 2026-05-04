@@ -121,6 +121,7 @@ func (it *LinkedCollections) decrementLength() int {
 	return it.length
 }
 
+//nolint:unused // retained for API parity with decrement/increment helpers
 func (it *LinkedCollections) incrementLengthLock() {
 	it.RLock()
 	it.length++
