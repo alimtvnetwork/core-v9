@@ -2230,3 +2230,5 @@ func Test_KeyValReplacer(t *testing.T) {
 	}
 	expected.ShouldBeEqual(t, 0, "KeyValReplacer returns correct value -- with args", actual)
 }
+
+var _ = testNamer{}.Name

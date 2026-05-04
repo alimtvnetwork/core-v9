@@ -576,3 +576,8 @@ var (
 		},
 	}
 )
+
+var (
+	_ = titleCurlyMetaTestCases
+	_ = titleCurlyTestCases
+)
