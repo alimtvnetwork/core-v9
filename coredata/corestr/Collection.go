@@ -956,20 +956,16 @@ func (it *Collection) AddStringsAsync(
 		return it
 	}
 
-	it.Lock()
 	wg.Add(len(stringItems))
 
 	adderFunc := func(s string) {
-		it.Add(s)
-
+		it.AddLock(s)
 		wg.Done()
 	}
 
 	for _, item := range stringItems {
 		go adderFunc(item)
 	}
-
-	it.Unlock()
 
 	return it
 }

@@ -354,20 +354,20 @@ func Test_ResultsPtrCollection_GetPagedItems_NegativeIndex_Panic(t *testing.T) {
 // ── CastAny — Result type switch ──
 
 func Test_CastAny_Result(t *testing.T) {
-	// Arrange — Result implements Jsoner, so CastAny dispatches via Jsoner path
-	// which double-marshals. Use bytes directly for reliable deserialization.
+	// Arrange — Result type case in CastAny dispatches before Jsoner,
+	// so deserialization succeeds without double-marshalling.
 	r := corejson.New("hello")
 	var target string
 
 	// Act
 	err := corejson.CastAny.OrDeserializeTo(r, &target)
 
-	// Assert — Jsoner path double-marshals, causing deserialization failure
+	// Assert — Result path deserializes successfully.
 	actual := args.Map{
 		"hasErr": err != nil,
 	}
 	expected := args.Map{
-		"hasErr": true,
+		"hasErr": false,
 	}
 	expected.ShouldBeEqual(t, 0, "CastAny.Deserialize works -- Result type", actual)
 }
@@ -375,19 +375,19 @@ func Test_CastAny_Result(t *testing.T) {
 // ── CastAny — *Result type switch ──
 
 func Test_CastAny_ResultPtr(t *testing.T) {
-	// Arrange — *Result also implements Jsoner, dispatches via Jsoner path
+	// Arrange — *Result type case dispatches before Jsoner in CastAny.
 	r := corejson.New("world")
 	var target string
 
 	// Act
 	err := corejson.CastAny.OrDeserializeTo(&r, &target)
 
-	// Assert — Jsoner path double-marshals
+	// Assert — *Result path deserializes successfully.
 	actual := args.Map{
 		"hasErr": err != nil,
 	}
 	expected := args.Map{
-		"hasErr": true,
+		"hasErr": false,
 	}
 	expected.ShouldBeEqual(t, 0, "CastAny.Deserialize works -- *Result type", actual)
 }
