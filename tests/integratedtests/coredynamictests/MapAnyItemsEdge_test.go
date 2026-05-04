@@ -45,6 +45,8 @@ func buildMapFromInput(input args.Map) *coredynamic.MapAnyItems {
 	return coredynamic.NewMapAnyItemsUsingItems(leftMap)
 }
 
+var _ = buildMapFromInput
+
 // ==========================================
 // IsEqual — named tests
 // ==========================================

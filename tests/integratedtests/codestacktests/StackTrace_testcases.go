@@ -33,6 +33,8 @@ type traceType = codestack.Trace
 type traceCollectionType = codestack.TraceCollection
 type nilResult = results.ResultAny
 
+var _ traceCollectionType
+
 // ── FileWithLine nil-safety ──
 
 var coverageFileWithLineNilSafeCases = []coretestcases.CaseNilSafe{

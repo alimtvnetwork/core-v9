@@ -886,3 +886,9 @@ var traceCollectionStringEmptyTestCases = []coretestcases.CaseV1{
 		ExpectedInput: args.Map{"isEmpty": true},
 	},
 }
+
+var (
+	_ = extNewTraceCollectionDefaultTestCases
+	_ = extNewTraceCollectionUsingTestCases
+	_ = extNewTraceCollectionEmptyTestCases
+)
