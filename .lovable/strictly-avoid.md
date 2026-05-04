@@ -9,3 +9,5 @@
 - **Storing roles on profile/users table:** Privilege escalation risk — use separate `user_roles` table.
 - **Nil-checking value types:** Go value types (structs returned by value) can't be compared to nil.
 - **Using `%s` with generic types:** Use `%v` instead.
+- **Using pinned golangci-lint versions when Go version changes:** Always use `version: latest` in CI to avoid Go version mismatch. See: `.lovable/cicd-issues/01-golangci-lint-version-mismatch.md`
+- **Renaming module paths without checking all scripts:** PowerShell scripts, shell scripts, and data files may contain hardcoded module paths beyond Go imports. Always search broadly with `rg`.
