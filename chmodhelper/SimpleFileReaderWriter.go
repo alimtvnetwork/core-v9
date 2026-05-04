@@ -25,7 +25,6 @@ package chmodhelper
 import (
 	"errors"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"path"
 	"path/filepath"
