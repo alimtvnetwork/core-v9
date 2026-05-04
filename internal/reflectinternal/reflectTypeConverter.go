@@ -63,7 +63,7 @@ func (it reflectTypeConverter) SliceFirstItemTypeName(slice any) string {
 		return ""
 	}
 
-	if rt.Kind() == reflect.Ptr || rt.Kind() == reflect.Ptr {
+	if rt.Kind() == reflect.Ptr {
 		rt = rt.Elem()
 	}
 

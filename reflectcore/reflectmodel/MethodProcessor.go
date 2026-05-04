@@ -204,11 +204,8 @@ func (it *MethodProcessor) IsEqual(another *MethodProcessor) bool {
 	}
 
 	isOutArgsOkay, _ := it.OutArgsVerifyRv(another.GetOutArgsTypes())
-	if !isOutArgsOkay {
-		return false
-	}
 
-	return true
+	return isOutArgsOkay
 }
 
 func (it *MethodProcessor) GetType() reflect.Type {

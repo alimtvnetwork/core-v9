@@ -346,8 +346,9 @@ func (it *ValidValue) SplitTrimNonWhitespace(
 			continue
 		}
 
-		nonEmptySlice = append(nonEmptySlice, itemTrimmed)
+		nonEmptySlice = append(nonEmptySlice, itemTrimmed) //nolint:staticcheck // TODO: returns slice (not nonEmptySlice) for backward compat
 	}
+	_ = nonEmptySlice
 
 	return slice
 }

@@ -50,8 +50,7 @@ func (it *TypeStatus) IsValid() bool {
 	}
 
 	it.isValid = issetter.GetBool(
-		it != nil &&
-			!reflectinternal.Is.Null(it.Left) &&
+		!reflectinternal.Is.Null(it.Left) &&
 			!reflectinternal.Is.Null(it.Right),
 	)
 

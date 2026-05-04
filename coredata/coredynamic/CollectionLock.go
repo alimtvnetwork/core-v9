@@ -31,21 +31,24 @@ import (
 
 // LengthLock returns the number of items with mutex protection.
 func (it *Collection[T]) LengthLock() int {
-	it.Lock()
-	defer it.Unlock()
-
 	if it == nil {
 		return 0
 	}
+	it.Lock()
+	defer it.Unlock()
+
 	return len(it.items)
 }
 
 // IsEmptyLock returns true if the collection has no items, with mutex protection.
 func (it *Collection[T]) IsEmptyLock() bool {
+	if it == nil {
+		return true
+	}
 	it.Lock()
 	defer it.Unlock()
 
-	return it == nil || len(it.items) == 0
+	return len(it.items) == 0
 }
 
 // --- Thread-Safe Mutators ---
