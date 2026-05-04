@@ -103,6 +103,7 @@ func (it SimpleTestCase) LinesString(caseIndex int) string {
 		)
 }
 
+//nolint:unused // retained for opt-in silent-assert flow
 func (it SimpleTestCase) noPrintAssert(
 	caseIndex int,
 	t *testing.T,

@@ -319,6 +319,7 @@ func (it newBasicStringCreator) generateUppercaseLowercaseAliasMap(
 	return finalAliasMap
 }
 
+//nolint:unused // retained alongside other slice/map converters in this creator
 func (it newBasicStringCreator) sliceNamesToMap(
 	names []string,
 ) map[byte]string {

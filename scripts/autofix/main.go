@@ -369,6 +369,8 @@ func fixMissingComma(lines []string, errLine int) bool {
 }
 
 // rxOnlyCloseParen matches lines that are only whitespace + ")" or "),"
+//
+//nolint:unused // retained for upcoming close-paren autofix variant
 var rxOnlyCloseParen = regexp.MustCompile(`^\s*\)\s*,?\s*$`)
 
 // fixUnexpectedCloseParen handles "expected statement, found ')'"

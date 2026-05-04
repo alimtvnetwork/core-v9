@@ -43,6 +43,6 @@ var (
 	ReflectGetterUsingReflectValue = reflectinternal.ReflectGetterUsingReflectValue
 	SliceConverter                 = reflectinternal.SliceConverter
 	MapConverter                   = reflectinternal.MapConverter
-	indexToPositionFunc            = convertinternal.Util.String.IndexToPosition
-	prependWithSpacesFunc          = convertinternal.Util.String.PrependWithSpacesDefault
+	indexToPositionFunc            = convertinternal.Util.String.IndexToPosition   //nolint:unused // re-exported convenience alias
+	prependWithSpacesFunc          = convertinternal.Util.String.PrependWithSpacesDefault //nolint:unused // re-exported convenience alias
 )

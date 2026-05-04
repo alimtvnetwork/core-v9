@@ -30,6 +30,8 @@ import (
 
 // assertDiffOnMismatch delegates to errcore.AssertDiffOnMismatch
 // for consistent diff-based failure output.
+//
+//nolint:unused // retained as canonical helper for CaseNilSafe assertions
 func assertDiffOnMismatch(
 	t *testing.T,
 	caseIndex int,
