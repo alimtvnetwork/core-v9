@@ -1,3 +1,8 @@
+# v1.9.0 : lint root-cause cleanup for orphaned test scaffolds
+
+- #1 : Root-cause fix — preserve intentionally retained test-case fixtures, aliases, and helpers with explicit blank-identifier references so `golangci-lint` no longer fails on orphaned coverage scaffolding
+- #2 : Remove dead local `myStringer` declarations that were left behind after earlier test rewrites and never exercised by assertions
+
 # v1.8.0 : corestrtests Phase 2 Batch 2.1 — ValidValue / ValueStatus / TextWithLineNumber splits
 
 - #1 : Split `S01_InvalidValueStatus_S01_ValueStatus_TWLN_test.go` into `ValueStatus_InvalidStatus_test.go` (3 funcs) + `TextWithLineNumber_LineNumberAndEmptiness_test.go` (6 funcs)
