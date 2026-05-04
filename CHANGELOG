@@ -1,3 +1,9 @@
+# v1.9.1 : lint cleanup for production helpers and remaining test fixtures
+
+- #1 : Add `//nolint:unused` directives on intentionally retained production helpers (`LinkedCollections.incrementLengthLock`, `DynamicMap.isEqualSingle`, `newBasicStringCreator.sliceNamesToMap`, `SimpleTestCase.noPrintAssert`, `FuncWrap.in/outArgsMap`, `assertDiffOnMismatch`, `reflectPath.pathName`, `reflectcore` re-exported helpers, `autofix.rxOnlyCloseParen`)
+- #2 : Add blank-identifier keep-alive file in `cmd/main` so playground entry points (`readWriteTest01`, `testMakerTesting`, etc.) survive `unused` lint without modifying the placeholder `main.go`
+- #3 : Suppress remaining orphan test-fixture variables in `chmodhelpertests` and `codestacktests` via `var _ = …` references
+
 # v1.9.0 : lint root-cause cleanup for orphaned test scaffolds
 
 - #1 : Root-cause fix — preserve intentionally retained test-case fixtures, aliases, and helpers with explicit blank-identifier references so `golangci-lint` no longer fails on orphaned coverage scaffolding
