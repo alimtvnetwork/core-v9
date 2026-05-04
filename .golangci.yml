@@ -26,6 +26,14 @@ linters:
         - -ST1021   # exported type comment form
         - -ST1022   # exported var comment form
         - -SA1019   # deprecated APIs (io/ioutil, runtime.GOROOT) — tracked separately
+        - -S1008    # if-return simplification (style)
+        - -S1011    # loop-to-append (style)
+        - -S1021    # merge var decl with assignment (style)
+        - -S1028    # errors.New(fmt.Sprintf) (style)
+        - -QF1001   # De Morgan's law (style/quickfix)
+        - -QF1003   # tagged switch (style/quickfix)
+        - -QF1008   # embedded field selector (style/quickfix)
+        - -QF1012   # fmt.Fprintf (style/quickfix)
 
   exclusions:
     generated: lax
