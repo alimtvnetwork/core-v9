@@ -513,3 +513,12 @@ func Test_SixFunc_Slice_String(t *testing.T) {
 	}
 	expected.ShouldBeEqual(t, 0, "Slice/String returns correct -- SixFunc", actual)
 }
+
+var (
+	_ = sampleRetErr
+	_ = sampleRetBool
+	_ = sampleRetString
+	_ = sampleRetAny
+	_ = sampleRetAnyErr
+	_ = sampleRetAnyErrFail
+)

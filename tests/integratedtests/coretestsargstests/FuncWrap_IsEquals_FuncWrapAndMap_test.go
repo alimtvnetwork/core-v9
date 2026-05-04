@@ -1140,3 +1140,5 @@ func callPanicsCov4(fn func()) (panicked bool) {
 	fn()
 	return false
 }
+
+var _ = helperRetIntBool
