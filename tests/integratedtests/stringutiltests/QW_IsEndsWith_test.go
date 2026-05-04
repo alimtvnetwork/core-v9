@@ -147,3 +147,5 @@ func Test_QW_UsingStringerMapOptions_DirectKeys(t *testing.T) {
 	result := stringutil.ReplaceTemplate.UsingStringerMapOptions(false, "hello key world", m)
 	_ = result
 }
+
+var _ = qwTestNamer{}.Name
