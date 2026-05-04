@@ -25,12 +25,14 @@ package regexnew
 import (
 	"errors"
 	"regexp"
+	"sync"
 )
 
 // LazyRegex
 //
 //	lazy regex for future unwrapping or compiled but only once.
 type LazyRegex struct {
+	mu           sync.Mutex
 	isCompiled   bool
 	isApplicable bool // no err, pattern defined, not null
 	pattern      string
@@ -81,7 +83,10 @@ func (it *LazyRegex) IsApplicable() bool {
 //
 //	it is done through the locking mechanism
 func (it *LazyRegex) Compile() (regex *regexp.Regexp, err error) {
-	if it.IsCompiled() {
+	it.mu.Lock()
+	defer it.mu.Unlock()
+
+	if it.isCompiled {
 		return it.regex, it.compiledErr
 	}
 
