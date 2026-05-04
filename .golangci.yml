@@ -34,18 +34,21 @@ linters:
           - unused
           - staticcheck
           - ineffassign
+          - govet
       - path: tests/
         linters:
           - errcheck
           - unused
           - staticcheck
           - ineffassign
+          - govet
       - path: testwrappers/
         linters:
           - errcheck
           - unused
           - staticcheck
           - ineffassign
+          - govet
       - path: benchmark_test\.go
         linters:
           - errcheck
