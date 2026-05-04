@@ -37,6 +37,8 @@ linters:
         - -S1009    # nil + len() check (style)
         - -S1019    # make() simplification (style)
         - -SA5011   # possible nil deref (lock-then-nilcheck pattern, intentional fast-path)
+        - -QF1002   # tagged switch (style/quickfix)
+        - -S1025    # Sprintf no-op (style)
 
   exclusions:
     generated: lax
