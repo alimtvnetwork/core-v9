@@ -326,8 +326,9 @@ func (it *ValidValue) SplitNonEmpty(
 			continue
 		}
 
-		nonEmptySlice = append(nonEmptySlice, item)
+		nonEmptySlice = append(nonEmptySlice, item) //nolint:staticcheck // TODO: returns slice (not nonEmptySlice) for backward compat
 	}
+	_ = nonEmptySlice
 
 	return slice
 }

@@ -87,7 +87,7 @@ func (it *StringsOnce) ValuesPtr() []string {
 }
 
 func (it *StringsOnce) Value() []string {
-	if it.isInitialized == true {
+	if it.isInitialized {
 		return it.innerData
 	}
 

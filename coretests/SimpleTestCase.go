@@ -77,7 +77,7 @@ func (it SimpleTestCase) ActualString() string {
 	return GetAssert.ToString(it.ActualInput)
 }
 
-func (it SimpleTestCase) SetActual(actual any) {
+func (it *SimpleTestCase) SetActual(actual any) {
 	it.ActualInput = actual
 }
 

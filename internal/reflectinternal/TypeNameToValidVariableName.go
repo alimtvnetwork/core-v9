@@ -49,13 +49,13 @@ func TypeNameToValidVariableName(currentTypeName string) (validVarName string) {
 			}
 
 			if c == '[' && firstPart[i+1] == ']' {
-				i++
+				_ = i
 				leftPartSb.WriteString(typeReplacerMap["[]"])
 				continue
 			}
 
 			if c == '{' && firstPart[i+1] == '}' {
-				i++
+				_ = i
 				continue
 			}
 

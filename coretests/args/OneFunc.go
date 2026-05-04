@@ -44,7 +44,7 @@ import (
 //	results, err := tc.InvokeWithValidArgs()
 type OneFunc[T1 any] struct {
 	First         T1                       `json:",omitempty"`
-	WorkFunc      any                      `json:"-,omitempty"`
+	WorkFunc      any                      `json:"-"`
 	Expect        any                      `json:",omitempty"`
 	toSlice       []any                    `json:"-"`
 	isSliceCached bool                     `json:"-"`

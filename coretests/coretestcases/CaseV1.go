@@ -89,7 +89,7 @@ func (it CaseV1) AsSimpleTestCaseWrapper() coretests.SimpleTestCaseWrapper {
 	return it
 }
 
-func (it CaseV1) SetActual(actual any) {
+func (it *CaseV1) SetActual(actual any) {
 	it.ActualInput = actual
 }
 
@@ -97,7 +97,7 @@ func (it CaseV1) CaseTitle() string {
 	return it.Title
 }
 
-func (it CaseV1) SetExpected(expected any) {
+func (it *CaseV1) SetExpected(expected any) {
 	it.ExpectedInput = expected
 }
 

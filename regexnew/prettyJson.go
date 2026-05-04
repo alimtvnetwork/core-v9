@@ -47,7 +47,7 @@ func prettyJson(anyItem any) string {
 
 	var prettyJSON bytes.Buffer
 
-	json.Indent(
+	_ = json.Indent(
 		&prettyJSON,
 		allBytes,
 		constants.EmptyString,

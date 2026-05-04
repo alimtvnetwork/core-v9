@@ -84,7 +84,7 @@ func (it *ByteOnce) IsZero() bool {
 }
 
 func (it *ByteOnce) IsNegative() bool {
-	return it.Value() < 0
+	return false // byte is unsigned; preserved for API stability
 }
 
 func (it *ByteOnce) IsPositive() bool {

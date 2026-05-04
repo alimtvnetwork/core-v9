@@ -699,7 +699,7 @@ func (it BytesCollection) MarshalJSON() ([]byte, error) {
 	return Serialize.Raw(it.JsonModel())
 }
 
-func (it BytesCollection) UnmarshalJSON(
+func (it *BytesCollection) UnmarshalJSON(
 	rawJsonBytes []byte,
 ) error {
 	var items [][]byte

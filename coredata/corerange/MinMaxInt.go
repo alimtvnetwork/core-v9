@@ -131,9 +131,7 @@ func (it *MinMaxInt) RangesInt() []int {
 		[]int,
 		it.RangeLengthInt())
 
-	for i, actualValue := range actualRanges {
-		rangesIntegers[i] = actualValue
-	}
+	copy(rangesIntegers, actualRanges)
 
 	return rangesIntegers
 }
