@@ -63,9 +63,12 @@ func (it *LazyRegex) IsApplicable() bool {
 		return false
 	}
 
+	it.mu.Lock()
 	if it.isApplicable {
+		it.mu.Unlock()
 		return true
 	}
+	it.mu.Unlock()
 
 	if it.IsUndefined() {
 		return false
@@ -76,6 +79,8 @@ func (it *LazyRegex) IsApplicable() bool {
 	// updates isApplicable
 	it.Compile()
 
+	it.mu.Lock()
+	defer it.mu.Unlock()
 	return it.isApplicable
 }
 
