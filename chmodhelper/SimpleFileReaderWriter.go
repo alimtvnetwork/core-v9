@@ -354,7 +354,7 @@ func (it SimpleFileReaderWriter) ReadStringLock() (content string, err error) {
 }
 
 func (it SimpleFileReaderWriter) Read() ([]byte, error) {
-	allBytes, err := ioutil.ReadFile(it.FilePath)
+	allBytes, err := os.ReadFile(it.FilePath)
 
 	if err == nil {
 		return allBytes, err
