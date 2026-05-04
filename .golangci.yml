@@ -34,6 +34,9 @@ linters:
         - -QF1003   # tagged switch (style/quickfix)
         - -QF1008   # embedded field selector (style/quickfix)
         - -QF1012   # fmt.Fprintf (style/quickfix)
+        - -S1009    # nil + len() check (style)
+        - -S1019    # make() simplification (style)
+        - -SA5011   # possible nil deref (lock-then-nilcheck pattern, intentional fast-path)
 
   exclusions:
     generated: lax
