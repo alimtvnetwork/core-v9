@@ -120,7 +120,14 @@ func (it *LazyRegex) CompileMust() (regex *regexp.Regexp) {
 }
 
 func (it *LazyRegex) IsCompiled() bool {
-	return it != nil && it.isCompiled
+	if it == nil {
+		return false
+	}
+
+	it.mu.Lock()
+	defer it.mu.Unlock()
+
+	return it.isCompiled
 }
 
 func (it *LazyRegex) OnRequiredCompiled() error {
