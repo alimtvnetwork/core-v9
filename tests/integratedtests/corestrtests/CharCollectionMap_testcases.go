@@ -1065,3 +1065,5 @@ var covS06NewCreatorTestCases = []coretestcases.CaseV1{
 		},
 	},
 }
+
+var _ = covS06ReflectInterfaceValTestCases

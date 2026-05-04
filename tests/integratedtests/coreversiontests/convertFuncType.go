@@ -29,3 +29,5 @@ func convertFuncType(i any) (resultFunc isBoolCheckerFunc) {
 
 	return nil
 }
+
+var _ = convertFuncType

@@ -313,7 +313,6 @@ func Test_BasicString_GetIndexByName_NotFound(t *testing.T) {
 
 func Test_BasicStringCreator_CreateUsingStringersSpread(t *testing.T) {
 	// Arrange
-	type testStringer struct{ val string }
 	bs := enumimpl.New.BasicString.CreateUsingNamesSpread("TestEnum", "Alpha", "Beta", "Gamma")
 
 	// Act

@@ -34,7 +34,7 @@ type sampleStruct struct {
 	Name    string
 	Age     int
 	Active  bool
-	private string
+	_       string
 }
 
 func (s sampleStruct) PublicMethod(a string, b int) (string, error) {

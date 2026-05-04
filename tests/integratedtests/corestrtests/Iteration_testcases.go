@@ -147,3 +147,13 @@ var srcC20LeftMiddleRightTestCase = coretestcases.CaseV1{
 		"noPanic": true,
 	},
 }
+
+var (
+	_ = srcC20ValidValueConstructorsTestCase
+	_ = srcC20ValidValueBytesOnceTestCase
+	_ = srcC20ValidValueStringChecksTestCase
+	_ = srcC20ValidValueConversionsTestCase
+	_ = srcC20ValidValueComparisonsTestCase
+	_ = srcC20ValidValueCloneDisposeTestCase
+	_ = srcC20ValidValueJsonTestCase
+)

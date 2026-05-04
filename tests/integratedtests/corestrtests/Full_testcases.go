@@ -387,3 +387,5 @@ var srcC10AllIndividualsSimpleSlicesTestCase = coretestcases.CaseV1{
 		"length": 3,
 	},
 }
+
+var _ = srcC10CollectionFilterTestCase
