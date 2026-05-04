@@ -329,5 +329,5 @@ func (it anyTo) String(
 func isNilPointer(item any) bool {
 	rv := reflect.ValueOf(item)
 
-	return rv.Kind() == reflect.Ptr && rv.IsNil()
+	return rv.Kind() == reflect.Pointer && rv.IsNil()
 }
