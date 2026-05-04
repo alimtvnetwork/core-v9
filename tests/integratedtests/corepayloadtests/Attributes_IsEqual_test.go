@@ -474,7 +474,6 @@ func Test_TypedPayloadWrapper_Serialize(t *testing.T) {
 
 func Test_PayloadCreateInstructionTypeStringer(t *testing.T) {
 	// Arrange
-	type myStringer struct{ val string }
 	ms := corepayload.PayloadCreateInstructionTypeStringer{
 		Name:                 "test",
 		Identifier:           "id1",

@@ -39,6 +39,8 @@ type testUserCov15 struct {
 	Email string `json:"Email"`
 }
 
+var _ testUserCov15
+
 func makeTypedWrapperCov15(t *testing.T) *corepayload.TypedPayloadWrapper[testUser] {
 	t.Helper()
 	tw, err := corepayload.NewTypedPayloadWrapperFrom[testUser](
