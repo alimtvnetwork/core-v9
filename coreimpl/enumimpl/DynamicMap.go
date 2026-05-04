@@ -888,6 +888,7 @@ func (it *DynamicMap) isNotEqual(
 	return !reflect.DeepEqual(left, right)
 }
 
+//nolint:unused // retained as counterpart to isNotEqualSingle for symmetry
 func (it *DynamicMap) isEqualSingle(
 	isRegardlessType bool,
 	left,

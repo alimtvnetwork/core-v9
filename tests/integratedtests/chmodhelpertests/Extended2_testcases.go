@@ -390,3 +390,5 @@ var ext2GetRwxLengthErrTestCases = []coretestcases.CaseV1{
 		},
 	},
 }
+
+var _ = ext2SingleRwxAllTestCase

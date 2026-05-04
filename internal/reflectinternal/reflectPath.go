@@ -91,6 +91,7 @@ func (it reflectPath) parentDir(curPath string) string {
 	return filepath.Dir(curPath)
 }
 
+//nolint:unused // retained alongside parentDir as part of path utility set
 func (it reflectPath) pathName(curPath string) string {
 	_, name := filepath.Split(curPath)
 

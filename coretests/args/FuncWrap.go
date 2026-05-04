@@ -56,8 +56,8 @@ type FuncWrap[T any] struct {
 	pkgNameOnly          string
 	funcDirectInvokeName string
 	pkgPath              string
-	inArgsMap            Map
-	outArgsMap           Map
+	inArgsMap            Map //nolint:unused // reserved for future named-arg lookup
+	outArgsMap           Map //nolint:unused // reserved for future named-arg lookup
 	inArgsNames          []string
 	outArgsTypesNames    []string
 	outArgsNames         []string
