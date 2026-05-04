@@ -67,7 +67,7 @@ func (it newRwxWrapperCreator) Create(mode string) (RwxWrapper, error) {
 	for i, allByte := range allBytes {
 		n := allByte - constants.ZeroChar
 
-		if n > 7 || n < 0 {
+		if n > 7 {
 			err := errcore.
 				InvalidCharType.
 				Error(

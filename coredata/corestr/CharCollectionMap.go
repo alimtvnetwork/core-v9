@@ -70,7 +70,7 @@ func (it *CharCollectionMap) GetCharsGroups(
 
 	collectionMap := New.CharCollectionMap.CapSelfCap(
 		length,
-		length/3,
+		lenBy4,
 	)
 
 	return collectionMap.AddStrings(items...)

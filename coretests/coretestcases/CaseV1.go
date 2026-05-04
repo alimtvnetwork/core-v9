@@ -90,7 +90,7 @@ func (it CaseV1) AsSimpleTestCaseWrapper() coretests.SimpleTestCaseWrapper {
 }
 
 func (it CaseV1) SetActual(actual any) {
-	it.ActualInput = actual
+	it.ActualInput = actual //nolint:staticcheck // value receiver required by interface
 }
 
 func (it CaseV1) CaseTitle() string {
@@ -98,7 +98,7 @@ func (it CaseV1) CaseTitle() string {
 }
 
 func (it CaseV1) SetExpected(expected any) {
-	it.ExpectedInput = expected
+	it.ExpectedInput = expected //nolint:staticcheck // value receiver required by interface
 }
 
 // VerifyTypeOfMatch

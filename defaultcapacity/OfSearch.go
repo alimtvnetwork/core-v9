@@ -33,7 +33,7 @@ func OfSearch(length int) int {
 		return length / constants.Capacity3
 	}
 
-	defaultCapacity := length
+	var defaultCapacity int
 
 	if length >= constants.ArbitraryCapacity1000 {
 		defaultCapacity = constants.ArbitraryCapacity100

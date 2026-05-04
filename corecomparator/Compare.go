@@ -232,9 +232,7 @@ func (it *Compare) UnmarshalJSON(data []byte) error {
 		return errors.New("compare unmarshal json error: data nil")
 	}
 
-	name := string(data)
-
-	compare, has := RangesMap[name]
+	compare, has := RangesMap[string(data)]
 
 	if has {
 		*it = compare

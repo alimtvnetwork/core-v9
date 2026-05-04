@@ -194,7 +194,7 @@ func (it *Version) IsBuildInvalidOrZero() bool {
 }
 
 func (it Version) isInvalidOrEmptyAll() bool {
-	return it.IsInvalid == true ||
+	return it.IsInvalid ||
 		it.IsMajorInvalidOrZero() &&
 			it.IsMinorInvalidOrZero() &&
 			it.IsPatchInvalidOrZero() &&
@@ -203,7 +203,7 @@ func (it Version) isInvalidOrEmptyAll() bool {
 
 func (it *Version) IsEmptyOrInvalid() bool {
 	return it == nil ||
-		it.IsInvalid == true ||
+		it.IsInvalid ||
 		it.VersionDisplay() == "" ||
 		it.isInvalidOrEmptyAll()
 }

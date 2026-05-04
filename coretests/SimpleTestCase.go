@@ -78,7 +78,7 @@ func (it SimpleTestCase) ActualString() string {
 }
 
 func (it SimpleTestCase) SetActual(actual any) {
-	it.ActualInput = actual
+	it.ActualInput = actual //nolint:staticcheck // value receiver required by SimpleTestCaseWrapper interface
 }
 
 // String

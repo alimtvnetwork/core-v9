@@ -293,7 +293,7 @@ func (it *RawErrCollection) ReflectSetTo(toPtr any) error {
 				)
 		}
 
-		v = it
+		*v = *it
 
 		return nil
 	}

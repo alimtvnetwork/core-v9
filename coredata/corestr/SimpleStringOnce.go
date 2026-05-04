@@ -636,8 +636,9 @@ func (it *SimpleStringOnce) SplitNonEmpty(
 			continue
 		}
 
-		nonEmptySlice = append(nonEmptySlice, item)
+		nonEmptySlice = append(nonEmptySlice, item) //nolint:staticcheck // TODO: returns slice (not nonEmptySlice) for backward compat
 	}
+	_ = nonEmptySlice
 
 	return slice
 }
@@ -655,8 +656,9 @@ func (it *SimpleStringOnce) SplitTrimNonWhitespace(
 			continue
 		}
 
-		nonEmptySlice = append(nonEmptySlice, itemTrimmed)
+		nonEmptySlice = append(nonEmptySlice, itemTrimmed) //nolint:staticcheck // TODO: returns slice (not nonEmptySlice) for backward compat
 	}
+	_ = nonEmptySlice
 
 	return slice
 }

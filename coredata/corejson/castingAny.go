@@ -94,14 +94,14 @@ func (it castingAny) FromToOption(
 			[]byte(castedFrom),
 			castedToPtr,
 		)
-	case Jsoner:
-		jsonResult := castedFrom.Json()
-
-		return jsonResult.Deserialize(castedToPtr)
 	case Result:
 		return castedFrom.Deserialize(castedToPtr)
 	case *Result:
 		return castedFrom.Deserialize(castedToPtr)
+	case Jsoner:
+		jsonResult := castedFrom.Json()
+
+		return jsonResult.Deserialize(castedToPtr)
 	case bytesSerializer:
 		allBytes, parsingErr := castedFrom.Serialize()
 

@@ -280,8 +280,6 @@ func (it Result) String() string {
 		currentMap,
 	)
 
-	currentMap = nil
-
 	return toString
 }
 

@@ -463,7 +463,7 @@ func (it SimpleFileReaderWriter) GetSet(
 	if readErr != nil {
 		// remove file
 		// fine swallow error
-		it.Expire()
+		_ = it.Expire()
 	}
 
 	newAnyItem, err := onInvalidGenerateFunc()

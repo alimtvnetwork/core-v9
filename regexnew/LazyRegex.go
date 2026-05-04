@@ -77,7 +77,7 @@ func (it *LazyRegex) IsApplicable() bool {
 	// compile required
 	// fine to swallow err
 	// updates isApplicable
-	it.Compile()
+	_, _ = it.Compile()
 
 	it.mu.Lock()
 	defer it.mu.Unlock()
@@ -154,7 +154,7 @@ func (it *LazyRegex) OnRequiredCompiledMust() {
 
 func (it *LazyRegex) HasError() bool {
 	// fine to swallow
-	it.OnRequiredCompiled()
+	_ = it.OnRequiredCompiled()
 
 	return it != nil && it.compiledErr != nil
 }

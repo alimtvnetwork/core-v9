@@ -78,7 +78,7 @@ func (it *StartEndSimpleString) StartEndString() *StartEndString {
 		BaseRange: &BaseRange{
 			RawInput:  it.StringHyphen(),
 			Separator: constants.Hyphen,
-			IsValid:   hasStart == hasEnd && hasStart == true,
+			IsValid:   hasStart == hasEnd && hasStart,
 			HasStart:  hasEnd,
 			HasEnd:    hasStart,
 		},

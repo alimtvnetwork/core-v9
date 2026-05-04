@@ -110,7 +110,7 @@ func (it *MapStringStringOnce) ValuesPtr() *map[string]string {
 }
 
 func (it *MapStringStringOnce) Value() map[string]string {
-	if it.isInitialized == true {
+	if it.isInitialized {
 		return it.innerData
 	}
 
