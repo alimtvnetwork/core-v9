@@ -34,7 +34,6 @@ import (
 
 func Test_AnyTo_SmartString_Stringer_FromAnyToSmartString(t *testing.T) {
 	// Arrange
-	type myStringer struct{ val string }
 	// Use error interface as a proxy for Stringer-like
 	err := errors.New("test-err")
 	result := convertinternal.AnyTo.SmartString(err)

@@ -88,7 +88,6 @@ func Test_AnyTo_SmartString_Error(t *testing.T) {
 
 func Test_AnyTo_SmartString_Stringer(t *testing.T) {
 	// Arrange
-	type myStringer struct{ val string }
 	// Use a type that implements fmt.Stringer
 	result := convertinternal.AnyTo.SmartString(fmt.Errorf("stringer"))
 

@@ -578,6 +578,8 @@ var (
 )
 
 var (
+	_ = curlyWrapIfEnabledValidTestCases
+	_ = curlyWrapIfDisabledValidTestCases
 	_ = titleCurlyMetaTestCases
 	_ = titleCurlyTestCases
 )

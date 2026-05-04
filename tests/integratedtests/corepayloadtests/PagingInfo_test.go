@@ -56,6 +56,8 @@ func pagingInfoDiff(label string, left, right *corepayload.PagingInfo) string {
 	)
 }
 
+var _ = pagingInfoDiff
+
 func Test_PagingInfo_IsEqual_Verification(t *testing.T) {
 	for caseIndex, testCase := range pagingInfoIsEqualTestCases {
 		// Arrange

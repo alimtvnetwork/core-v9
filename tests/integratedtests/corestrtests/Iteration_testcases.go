@@ -156,4 +156,10 @@ var (
 	_ = srcC20ValidValueComparisonsTestCase
 	_ = srcC20ValidValueCloneDisposeTestCase
 	_ = srcC20ValidValueJsonTestCase
+	_ = srcC20ValidValueSplitTestCase
+	_ = srcC20ValidValuesTestCase
+	_ = srcC20ValueStatusTestCase
+	_ = srcC20TextWithLineNumberTestCase
+	_ = srcC20LeftRightTestCase
+	_ = srcC20LeftMiddleRightTestCase
 )
