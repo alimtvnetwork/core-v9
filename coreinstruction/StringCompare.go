@@ -23,9 +23,9 @@
 package coreinstruction
 
 import (
-	"github.com/alimtvnetwork/core-v8/corecomparator"
-	"github.com/alimtvnetwork/core-v8/enums/stringcompareas"
-	"github.com/alimtvnetwork/core-v8/regexnew"
+	"github.com/alimtvnetwork/core-v9/corecomparator"
+	"github.com/alimtvnetwork/core-v9/enums/stringcompareas"
+	"github.com/alimtvnetwork/core-v9/regexnew"
 )
 
 type StringCompare struct {

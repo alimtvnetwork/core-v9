@@ -25,8 +25,8 @@ package convertinternaltests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/internal/convertinternal"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/internal/convertinternal"
 )
 
 // ── StringsTo.WithSpaces ──

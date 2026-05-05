@@ -27,8 +27,8 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/iserror"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/iserror"
 )
 
 // ── Defined / Empty additional coverage ──

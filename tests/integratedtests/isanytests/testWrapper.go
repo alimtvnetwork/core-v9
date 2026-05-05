@@ -23,7 +23,7 @@
 package isanytests
 
 import (
-	"github.com/alimtvnetwork/core-v8/tests/testwrappers/stringstestwrapper"
+	"github.com/alimtvnetwork/core-v9/tests/testwrappers/stringstestwrapper"
 )
 
 type testWrapper = stringstestwrapper.StringsTestWrapper

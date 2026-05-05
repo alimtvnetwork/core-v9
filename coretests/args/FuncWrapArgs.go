@@ -25,8 +25,8 @@ package args
 import (
 	"reflect"
 
-	"github.com/alimtvnetwork/core-v8/coredata/corestr"
-	"github.com/alimtvnetwork/core-v8/internal/reflectinternal"
+	"github.com/alimtvnetwork/core-v9/coredata/corestr"
+	"github.com/alimtvnetwork/core-v9/internal/reflectinternal"
 )
 
 // ArgsCount returns the number of input arguments the wrapped function expects.

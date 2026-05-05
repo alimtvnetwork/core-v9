@@ -25,7 +25,7 @@ package stringslice
 import (
 	"strings"
 
-	"github.com/alimtvnetwork/core-v8/constants"
+	"github.com/alimtvnetwork/core-v9/constants"
 )
 
 // ExpandBySplits

@@ -26,12 +26,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/chmodhelper"
-	"github.com/alimtvnetwork/core-v8/coredata/corestr"
-	"github.com/alimtvnetwork/core-v8/errcore"
-	"github.com/alimtvnetwork/core-v8/filemode"
-	"github.com/alimtvnetwork/core-v8/internal/pathinternal"
-	"github.com/alimtvnetwork/core-v8/iserror"
+	"github.com/alimtvnetwork/core-v9/chmodhelper"
+	"github.com/alimtvnetwork/core-v9/coredata/corestr"
+	"github.com/alimtvnetwork/core-v9/errcore"
+	"github.com/alimtvnetwork/core-v9/filemode"
+	"github.com/alimtvnetwork/core-v9/internal/pathinternal"
+	"github.com/alimtvnetwork/core-v9/iserror"
 )
 
 func Test_SimpleFileWriter_CreateDir_If_Verification(t *testing.T) {

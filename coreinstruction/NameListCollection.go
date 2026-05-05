@@ -22,7 +22,7 @@
 
 package coreinstruction
 
-import "github.com/alimtvnetwork/core-v8/coredata/corejson"
+import "github.com/alimtvnetwork/core-v9/coredata/corejson"
 
 type NameListCollection struct {
 	NameLists []NameList

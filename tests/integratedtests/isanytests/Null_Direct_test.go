@@ -25,8 +25,8 @@ package isanytests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/isany"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/isany"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 func Test_Null_Direct_NilInput(t *testing.T) {

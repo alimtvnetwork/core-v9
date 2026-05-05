@@ -22,7 +22,7 @@
 
 package corepayload
 
-import "github.com/alimtvnetwork/core-v8/defaultcapacity"
+import "github.com/alimtvnetwork/core-v9/defaultcapacity"
 
 // PayloadsCollectionGetters.go — Read-only accessor and query methods extracted from PayloadsCollection.go
 

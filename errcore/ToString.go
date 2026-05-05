@@ -23,7 +23,7 @@
 package errcore
 
 import (
-	"github.com/alimtvnetwork/core-v8/constants"
+	"github.com/alimtvnetwork/core-v9/constants"
 )
 
 func ToString(err error) string {

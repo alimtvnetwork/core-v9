@@ -25,7 +25,7 @@ package chmodhelper
 import (
 	"os"
 
-	"github.com/alimtvnetwork/core-v8/internal/pathinternal"
+	"github.com/alimtvnetwork/core-v9/internal/pathinternal"
 )
 
 type fileBytesWriter struct{}

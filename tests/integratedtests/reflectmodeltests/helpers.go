@@ -25,7 +25,7 @@ package reflectmodeltests
 import (
 	"reflect"
 
-	"github.com/alimtvnetwork/core-v8/reflectcore/reflectmodel"
+	"github.com/alimtvnetwork/core-v9/reflectcore/reflectmodel"
 )
 
 // sampleStruct is a test helper struct used to create

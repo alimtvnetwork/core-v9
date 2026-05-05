@@ -22,7 +22,7 @@
 
 package conditional
 
-import "github.com/alimtvnetwork/core-v8/issetter"
+import "github.com/alimtvnetwork/core-v9/issetter"
 
 func Setter(
 	isTrue bool,

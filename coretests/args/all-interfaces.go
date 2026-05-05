@@ -25,7 +25,7 @@ package args
 import (
 	"fmt"
 
-	"github.com/alimtvnetwork/core-v8/coreinterface"
+	"github.com/alimtvnetwork/core-v9/coreinterface"
 )
 
 // FuncWrapGetter provides access to a FuncWrapAny instance.

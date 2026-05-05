@@ -22,7 +22,7 @@
 
 package chmodhelpertestwrappers
 
-import "github.com/alimtvnetwork/core-v8/chmodhelper/chmodins"
+import "github.com/alimtvnetwork/core-v9/chmodhelper/chmodins"
 
 var RwxCompileValueTestCases = []RwxCompileValueTestWrapper{
 	{

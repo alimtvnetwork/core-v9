@@ -25,8 +25,8 @@ package corevalidatortests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/corevalidator"
-	"github.com/alimtvnetwork/core-v8/enums/stringcompareas"
+	"github.com/alimtvnetwork/core-v9/corevalidator"
+	"github.com/alimtvnetwork/core-v9/enums/stringcompareas"
 	"github.com/smartystreets/goconvey/convey"
 )
 

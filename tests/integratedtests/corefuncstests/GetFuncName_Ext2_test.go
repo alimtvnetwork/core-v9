@@ -27,8 +27,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/corefuncs"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/corefuncs"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // ============================================================================

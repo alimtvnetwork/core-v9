@@ -25,10 +25,10 @@ package coretestcasestests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
-	"github.com/alimtvnetwork/core-v8/coretests/results"
-	"github.com/alimtvnetwork/core-v8/enums/stringcompareas"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/coretests/results"
+	"github.com/alimtvnetwork/core-v9/enums/stringcompareas"
 	"github.com/smarty/assertions/should"
 )
 

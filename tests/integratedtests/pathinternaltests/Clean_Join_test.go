@@ -26,8 +26,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/internal/pathinternal"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/internal/pathinternal"
 )
 
 func Test_Clean(t *testing.T) {

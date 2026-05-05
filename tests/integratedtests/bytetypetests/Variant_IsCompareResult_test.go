@@ -26,9 +26,9 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/bytetype"
-	"github.com/alimtvnetwork/core-v8/corecomparator"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/bytetype"
+	"github.com/alimtvnetwork/core-v9/corecomparator"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 func Test_Variant_IsCompareResult(t *testing.T) {

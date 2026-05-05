@@ -23,9 +23,9 @@
 package bytetypetests
 
 import (
-	"github.com/alimtvnetwork/core-v8/bytetype"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/bytetype"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
 )
 
 var extIsCompareResultTestCases = []coretestcases.CaseV1{

@@ -23,7 +23,7 @@
 package coretestcases
 
 import (
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // GenericGherkins is a typed test case representation using

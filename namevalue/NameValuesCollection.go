@@ -23,7 +23,7 @@
 package namevalue
 
 import (
-	"github.com/alimtvnetwork/core-v8/constants"
+	"github.com/alimtvnetwork/core-v9/constants"
 )
 
 // NameValuesCollection is the backward-compatible alias for Collection[string, any].

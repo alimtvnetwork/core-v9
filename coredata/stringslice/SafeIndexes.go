@@ -22,7 +22,7 @@
 
 package stringslice
 
-import "github.com/alimtvnetwork/core-v8/constants"
+import "github.com/alimtvnetwork/core-v9/constants"
 
 // SafeIndexes get safe indexes slice based on indexes given
 //

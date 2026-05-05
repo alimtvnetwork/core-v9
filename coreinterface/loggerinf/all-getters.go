@@ -23,8 +23,8 @@
 package loggerinf
 
 import (
-	"github.com/alimtvnetwork/core-v8/coreinterface/errcoreinf"
-	"github.com/alimtvnetwork/core-v8/internal/internalinterface"
+	"github.com/alimtvnetwork/core-v9/coreinterface/errcoreinf"
+	"github.com/alimtvnetwork/core-v9/internal/internalinterface"
 )
 
 type ModelBytesGetter interface {

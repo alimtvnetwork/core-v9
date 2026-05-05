@@ -22,7 +22,7 @@
 
 package coreinterface
 
-import "github.com/alimtvnetwork/core-v8/internal/internalinterface"
+import "github.com/alimtvnetwork/core-v9/internal/internalinterface"
 
 type ChangesCommitter interface {
 	HasChangesChecker

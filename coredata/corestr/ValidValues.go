@@ -23,10 +23,10 @@
 package corestr
 
 import (
-	"github.com/alimtvnetwork/core-v8/conditional"
-	"github.com/alimtvnetwork/core-v8/constants"
-	"github.com/alimtvnetwork/core-v8/defaultcapacity"
-	"github.com/alimtvnetwork/core-v8/internal/strutilinternal"
+	"github.com/alimtvnetwork/core-v9/conditional"
+	"github.com/alimtvnetwork/core-v9/constants"
+	"github.com/alimtvnetwork/core-v9/defaultcapacity"
+	"github.com/alimtvnetwork/core-v9/internal/strutilinternal"
 )
 
 type ValidValues struct {

@@ -23,9 +23,9 @@
 package entityinf
 
 import (
-	"github.com/alimtvnetwork/core-v8/coredata/corejson"
-	"github.com/alimtvnetwork/core-v8/internal/internalinterface"
-	"github.com/alimtvnetwork/core-v8/internal/internalinterface/internalserializer"
+	"github.com/alimtvnetwork/core-v9/coredata/corejson"
+	"github.com/alimtvnetwork/core-v9/internal/internalinterface"
+	"github.com/alimtvnetwork/core-v9/internal/internalinterface/internalserializer"
 )
 
 type BaseRecordEntityDefiner interface {

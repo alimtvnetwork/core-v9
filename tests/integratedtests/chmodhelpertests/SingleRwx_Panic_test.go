@@ -28,11 +28,11 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/chmodhelper"
-	"github.com/alimtvnetwork/core-v8/chmodhelper/chmodclasstype"
-	"github.com/alimtvnetwork/core-v8/chmodhelper/chmodins"
-	"github.com/alimtvnetwork/core-v8/coredata/corestr"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/chmodhelper"
+	"github.com/alimtvnetwork/core-v9/chmodhelper/chmodclasstype"
+	"github.com/alimtvnetwork/core-v9/chmodhelper/chmodins"
+	"github.com/alimtvnetwork/core-v9/coredata/corestr"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 func skipOnWindows(t *testing.T) {

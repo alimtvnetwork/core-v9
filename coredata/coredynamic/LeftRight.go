@@ -23,8 +23,8 @@
 package coredynamic
 
 import (
-	"github.com/alimtvnetwork/core-v8/coredata/corejson"
-	"github.com/alimtvnetwork/core-v8/internal/reflectinternal"
+	"github.com/alimtvnetwork/core-v9/coredata/corejson"
+	"github.com/alimtvnetwork/core-v9/internal/reflectinternal"
 )
 
 type LeftRight struct {

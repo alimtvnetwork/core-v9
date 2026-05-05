@@ -25,7 +25,7 @@ package errcore
 import (
 	"fmt"
 
-	"github.com/alimtvnetwork/core-v8/namevalue"
+	"github.com/alimtvnetwork/core-v9/namevalue"
 )
 
 func MessageNameValues(

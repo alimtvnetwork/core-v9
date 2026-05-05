@@ -22,7 +22,7 @@
 
 package corecomparator
 
-import "github.com/alimtvnetwork/core-v8/internal/csvinternal"
+import "github.com/alimtvnetwork/core-v9/internal/csvinternal"
 
 func RangeNamesCsv() string {
 	return csvinternal.RangeNamesWithValuesIndexesCsvString(

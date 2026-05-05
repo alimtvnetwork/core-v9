@@ -25,8 +25,8 @@ package corevalidatortests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/corevalidator"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/corevalidator"
 )
 
 func Test_Parameter_IsIgnoreCase(t *testing.T) {

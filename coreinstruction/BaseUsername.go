@@ -26,7 +26,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/alimtvnetwork/core-v8/internal/strutilinternal"
+	"github.com/alimtvnetwork/core-v9/internal/strutilinternal"
 )
 
 type BaseUsername struct {

@@ -25,8 +25,8 @@ package simplewraptests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/simplewrap"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/simplewrap"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // Test_Cov8_DoubleQuoteWrapElements_EmptyNonNilSlice tests the length==0 branch

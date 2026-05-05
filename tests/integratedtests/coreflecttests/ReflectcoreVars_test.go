@@ -25,7 +25,7 @@ package coreflecttests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/reflectcore"
+	"github.com/alimtvnetwork/core-v9/reflectcore"
 )
 
 // ==========================================

@@ -22,7 +22,7 @@
 
 package corejson
 
-import "github.com/alimtvnetwork/core-v8/internal/jsoninternal"
+import "github.com/alimtvnetwork/core-v9/internal/jsoninternal"
 
 const (
 	errTypeString  = "ErrorType.String"

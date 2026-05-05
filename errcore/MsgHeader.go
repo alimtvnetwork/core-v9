@@ -25,7 +25,7 @@ package errcore
 import (
 	"fmt"
 
-	"github.com/alimtvnetwork/core-v8/internal/msgformats"
+	"github.com/alimtvnetwork/core-v9/internal/msgformats"
 )
 
 func MsgHeader(

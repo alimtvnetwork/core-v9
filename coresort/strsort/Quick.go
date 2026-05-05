@@ -25,7 +25,7 @@ package strsort
 import (
 	"sort"
 
-	"github.com/alimtvnetwork/core-v8/coredata"
+	"github.com/alimtvnetwork/core-v9/coredata"
 )
 
 // QuickPtr Warning: Data gets mutated inside.

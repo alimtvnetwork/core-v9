@@ -23,10 +23,10 @@
 package payloadinf
 
 import (
-	"github.com/alimtvnetwork/core-v8/coredata/corejson"
-	"github.com/alimtvnetwork/core-v8/coreinterface"
-	"github.com/alimtvnetwork/core-v8/coreinterface/entityinf"
-	"github.com/alimtvnetwork/core-v8/coreinterface/errcoreinf"
+	"github.com/alimtvnetwork/core-v9/coredata/corejson"
+	"github.com/alimtvnetwork/core-v9/coreinterface"
+	"github.com/alimtvnetwork/core-v9/coreinterface/entityinf"
+	"github.com/alimtvnetwork/core-v9/coreinterface/errcoreinf"
 )
 
 type AttributesBinder interface {

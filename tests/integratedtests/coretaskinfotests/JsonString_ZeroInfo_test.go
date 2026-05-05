@@ -25,8 +25,8 @@ package coretaskinfotests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretaskinfo"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coretaskinfo"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // Test_Cov3_JsonString_ZeroInfo exercises JsonString on a zero-value Info.

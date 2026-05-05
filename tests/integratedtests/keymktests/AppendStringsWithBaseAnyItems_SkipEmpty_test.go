@@ -25,8 +25,8 @@ package keymktests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/keymk"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/keymk"
 )
 
 // Test_Cov5_AppendStringsWithBaseAnyItems_SkipEmpty covers

@@ -26,8 +26,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coreinstruction"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coreinstruction"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 func Test_FromTo_ClonePtr(t *testing.T) {

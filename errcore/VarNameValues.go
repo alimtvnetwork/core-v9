@@ -25,8 +25,8 @@ package errcore
 import (
 	"strings"
 
-	"github.com/alimtvnetwork/core-v8/constants"
-	"github.com/alimtvnetwork/core-v8/namevalue"
+	"github.com/alimtvnetwork/core-v9/constants"
+	"github.com/alimtvnetwork/core-v9/namevalue"
 )
 
 func VarNameValues(

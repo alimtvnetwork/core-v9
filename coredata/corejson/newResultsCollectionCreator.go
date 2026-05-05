@@ -23,7 +23,7 @@
 package corejson
 
 import (
-	"github.com/alimtvnetwork/core-v8/constants"
+	"github.com/alimtvnetwork/core-v9/constants"
 )
 
 type newResultsCollectionCreator struct{}

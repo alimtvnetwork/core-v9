@@ -25,12 +25,12 @@ package coreversiontests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/corecmp"
-	"github.com/alimtvnetwork/core-v8/corecomparator"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/coreversion"
-	"github.com/alimtvnetwork/core-v8/enums/versionindexes"
-	"github.com/alimtvnetwork/core-v8/errcore"
+	"github.com/alimtvnetwork/core-v9/corecmp"
+	"github.com/alimtvnetwork/core-v9/corecomparator"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coreversion"
+	"github.com/alimtvnetwork/core-v9/enums/versionindexes"
+	"github.com/alimtvnetwork/core-v9/errcore"
 )
 
 func Test_ComparisonValueIndexes_Verification(t *testing.T) {

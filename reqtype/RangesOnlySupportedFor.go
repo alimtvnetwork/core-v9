@@ -22,7 +22,7 @@
 
 package reqtype
 
-import "github.com/alimtvnetwork/core-v8/errcore"
+import "github.com/alimtvnetwork/core-v9/errcore"
 
 func RangesOnlySupportedFor(
 	message string,

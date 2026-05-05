@@ -23,8 +23,8 @@
 package stringslice
 
 import (
-	"github.com/alimtvnetwork/core-v8/constants"
-	"github.com/alimtvnetwork/core-v8/defaultcapacity"
+	"github.com/alimtvnetwork/core-v9/constants"
+	"github.com/alimtvnetwork/core-v9/defaultcapacity"
 )
 
 // SafeIndexesDefaultWithDetail Only indexes which are present values will be included.

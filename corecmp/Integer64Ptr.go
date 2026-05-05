@@ -22,7 +22,7 @@
 
 package corecmp
 
-import "github.com/alimtvnetwork/core-v8/corecomparator"
+import "github.com/alimtvnetwork/core-v9/corecomparator"
 
 func Integer64Ptr(left, right *int64) corecomparator.Compare {
 	if left == nil && right == nil {

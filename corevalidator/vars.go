@@ -22,7 +22,7 @@
 
 package corevalidator
 
-import "github.com/alimtvnetwork/core-v8/enums/stringcompareas"
+import "github.com/alimtvnetwork/core-v9/enums/stringcompareas"
 
 var (
 	DefaultDisabledCoreCondition = Condition{

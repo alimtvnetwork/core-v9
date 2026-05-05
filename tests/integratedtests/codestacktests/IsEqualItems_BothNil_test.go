@@ -25,9 +25,9 @@ package codestacktests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/codestack"
-	"github.com/alimtvnetwork/core-v8/coredata/corejson"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/codestack"
+	"github.com/alimtvnetwork/core-v9/coredata/corejson"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // ── TraceCollection.IsEqualItems — nil paths ──

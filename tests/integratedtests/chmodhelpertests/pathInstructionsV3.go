@@ -23,9 +23,9 @@
 package chmodhelpertests
 
 import (
-	"github.com/alimtvnetwork/core-v8/chmodhelper"
-	"github.com/alimtvnetwork/core-v8/filemode"
-	"github.com/alimtvnetwork/core-v8/internal/pathinternal"
+	"github.com/alimtvnetwork/core-v9/chmodhelper"
+	"github.com/alimtvnetwork/core-v9/filemode"
+	"github.com/alimtvnetwork/core-v9/internal/pathinternal"
 )
 
 var (

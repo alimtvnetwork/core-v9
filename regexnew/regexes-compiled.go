@@ -23,7 +23,7 @@
 package regexnew
 
 import (
-	"github.com/alimtvnetwork/core-v8/regconsts"
+	"github.com/alimtvnetwork/core-v9/regconsts"
 )
 
 var (

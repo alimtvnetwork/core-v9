@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/alimtvnetwork/core-v8/corecmp"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/errcore"
+	"github.com/alimtvnetwork/core-v9/corecmp"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/errcore"
 )
 
 func Test_Time_Compare_Verification(t *testing.T) {

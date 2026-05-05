@@ -22,7 +22,7 @@
 
 package enumimpl
 
-import "github.com/alimtvnetwork/core-v8/internal/strutilinternal"
+import "github.com/alimtvnetwork/core-v9/internal/strutilinternal"
 
 // Format
 //

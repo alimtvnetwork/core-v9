@@ -25,9 +25,9 @@ package versionindexestests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/enums/versionindexes"
-	"github.com/alimtvnetwork/core-v8/errcore"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/enums/versionindexes"
+	"github.com/alimtvnetwork/core-v9/errcore"
 )
 
 var indexByName = map[string]versionindexes.Index{

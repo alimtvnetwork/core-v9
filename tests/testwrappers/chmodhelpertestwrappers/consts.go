@@ -22,7 +22,7 @@
 
 package chmodhelpertestwrappers
 
-import "github.com/alimtvnetwork/core-v8/coretests"
+import "github.com/alimtvnetwork/core-v9/coretests"
 
 const (
 	RwxApplyOnPath                coretests.TestFuncName = "RwxApplyOnPath"

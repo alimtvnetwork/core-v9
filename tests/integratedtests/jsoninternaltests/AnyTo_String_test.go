@@ -25,8 +25,8 @@ package jsoninternaltests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/internal/jsoninternal"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/internal/jsoninternal"
 )
 
 // ── AnyTo — String (not pretty) ──

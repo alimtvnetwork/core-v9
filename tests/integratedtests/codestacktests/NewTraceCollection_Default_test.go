@@ -25,8 +25,8 @@ package codestacktests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/codestack"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/codestack"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // ── newTraceCollection ──

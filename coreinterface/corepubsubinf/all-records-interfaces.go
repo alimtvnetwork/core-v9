@@ -23,12 +23,12 @@
 package corepubsubinf
 
 import (
-	"github.com/alimtvnetwork/core-v8/coreinterface"
-	"github.com/alimtvnetwork/core-v8/coreinterface/enuminf"
-	"github.com/alimtvnetwork/core-v8/coreinterface/errcoreinf"
-	"github.com/alimtvnetwork/core-v8/coreinterface/loggerinf"
-	"github.com/alimtvnetwork/core-v8/coreinterface/pathextendinf"
-	"github.com/alimtvnetwork/core-v8/internal/internalinterface"
+	"github.com/alimtvnetwork/core-v9/coreinterface"
+	"github.com/alimtvnetwork/core-v9/coreinterface/enuminf"
+	"github.com/alimtvnetwork/core-v9/coreinterface/errcoreinf"
+	"github.com/alimtvnetwork/core-v9/coreinterface/loggerinf"
+	"github.com/alimtvnetwork/core-v9/coreinterface/pathextendinf"
+	"github.com/alimtvnetwork/core-v9/internal/internalinterface"
 )
 
 type IdAsStringer interface {

@@ -25,8 +25,8 @@ package corejsontests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coredata/corejson"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coredata/corejson"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // ── Migrated from Serializer_test.go ──

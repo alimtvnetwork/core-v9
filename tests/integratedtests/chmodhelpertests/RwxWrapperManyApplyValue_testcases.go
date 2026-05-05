@@ -23,9 +23,9 @@
 package chmodhelpertests
 
 import (
-	"github.com/alimtvnetwork/core-v8/chmodhelper"
-	"github.com/alimtvnetwork/core-v8/chmodhelper/chmodclasstype"
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/chmodhelper"
+	"github.com/alimtvnetwork/core-v9/chmodhelper/chmodclasstype"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
 )
 
 type rwxWrapperManyApplyTestCase struct {

@@ -22,7 +22,7 @@
 
 package chmodhelper
 
-import "github.com/alimtvnetwork/core-v8/coredata/corestr"
+import "github.com/alimtvnetwork/core-v9/coredata/corestr"
 
 // GetFilesChmodRwxFullMapDirect returns filePath -> "-rwxrwxrwx"
 func GetFilesChmodRwxFullMapDirect(

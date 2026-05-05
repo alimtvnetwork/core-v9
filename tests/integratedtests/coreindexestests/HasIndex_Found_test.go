@@ -25,8 +25,8 @@ package coreindexestests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coreindexes"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coreindexes"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // ═══════════════════════════════════════════

@@ -23,9 +23,9 @@
 package chmodhelpertests
 
 import (
-	"github.com/alimtvnetwork/core-v8/chmodhelper/chmodins"
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
-	"github.com/alimtvnetwork/core-v8/tests/testwrappers/chmodhelpertestwrappers"
+	"github.com/alimtvnetwork/core-v9/chmodhelper/chmodins"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/tests/testwrappers/chmodhelpertestwrappers"
 )
 
 var verifyRwxChmodUsingRwxInstructionsTestCases = []coretestcases.CaseV1{

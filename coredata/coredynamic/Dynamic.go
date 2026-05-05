@@ -26,9 +26,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/alimtvnetwork/core-v8/constants"
-	"github.com/alimtvnetwork/core-v8/coredata/coreonce"
-	"github.com/alimtvnetwork/core-v8/issetter"
+	"github.com/alimtvnetwork/core-v9/constants"
+	"github.com/alimtvnetwork/core-v9/coredata/coreonce"
+	"github.com/alimtvnetwork/core-v9/issetter"
 )
 
 // Dynamic wraps an arbitrary value with cached reflection metadata.

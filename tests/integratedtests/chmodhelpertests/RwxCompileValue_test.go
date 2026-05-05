@@ -26,7 +26,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/chmodhelper"
+	"github.com/alimtvnetwork/core-v9/chmodhelper"
 )
 
 func Test_RwxCompileValue(t *testing.T) {

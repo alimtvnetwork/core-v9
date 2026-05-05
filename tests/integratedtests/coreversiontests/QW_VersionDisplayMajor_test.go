@@ -25,8 +25,8 @@ package coreversiontests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coreversion"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coreversion"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 func Test_QW_VersionDisplayMajor_Invalid(t *testing.T) {

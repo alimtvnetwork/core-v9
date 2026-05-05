@@ -26,8 +26,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/alimtvnetwork/core-v8/coretests"
-	"github.com/alimtvnetwork/core-v8/issetter"
+	"github.com/alimtvnetwork/core-v9/coretests"
+	"github.com/alimtvnetwork/core-v9/issetter"
 )
 
 var (

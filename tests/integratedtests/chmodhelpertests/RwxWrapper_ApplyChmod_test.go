@@ -28,7 +28,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // All tests below use mustRwxWrapper() from Coverage19_helpers.go

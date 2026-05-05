@@ -27,8 +27,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/enums/versionindexes"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/enums/versionindexes"
 )
 
 func Test_Index_EnumMethods(t *testing.T) {

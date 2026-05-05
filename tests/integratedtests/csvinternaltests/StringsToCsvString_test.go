@@ -25,8 +25,8 @@ package csvinternaltests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/internal/csvinternal"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/internal/csvinternal"
 )
 
 func Test_StringsToCsvString(t *testing.T) {

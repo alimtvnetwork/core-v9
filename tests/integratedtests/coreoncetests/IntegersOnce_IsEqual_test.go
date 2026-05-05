@@ -25,8 +25,8 @@ package coreoncetests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coredata/coreonce"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coredata/coreonce"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // Test_Cov12_IntegersOnce_IsEqual_NilReceiver tests IsEqual on nil *IntegersOnce.

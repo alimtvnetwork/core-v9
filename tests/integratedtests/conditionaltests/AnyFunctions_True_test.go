@@ -26,9 +26,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/conditional"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/issetter"
+	"github.com/alimtvnetwork/core-v9/conditional"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/issetter"
 )
 
 // ── AnyFunctions ──

@@ -22,7 +22,7 @@
 
 package stringcompareas
 
-import "github.com/alimtvnetwork/core-v8/coreutils/stringutil"
+import "github.com/alimtvnetwork/core-v9/coreutils/stringutil"
 
 var isEndsWithFunc = func(
 	contentLine,

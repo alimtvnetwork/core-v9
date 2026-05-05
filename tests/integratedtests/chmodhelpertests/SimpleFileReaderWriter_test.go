@@ -27,7 +27,7 @@ import (
 	"path/filepath"
 	"runtime"
 	"testing"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // newTestRW is defined in shared_coverage_helpers.go

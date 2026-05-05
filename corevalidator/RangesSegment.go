@@ -23,8 +23,8 @@
 package corevalidator
 
 import (
-	"github.com/alimtvnetwork/core-v8/coredata/corerange"
-	"github.com/alimtvnetwork/core-v8/enums/stringcompareas"
+	"github.com/alimtvnetwork/core-v9/coredata/corerange"
+	"github.com/alimtvnetwork/core-v9/enums/stringcompareas"
 )
 
 type RangesSegment struct {

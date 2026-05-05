@@ -23,8 +23,8 @@
 package stringslicetests
 
 import (
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
 )
 
 var srcIsEmptyTestCases = []coretestcases.CaseV1{

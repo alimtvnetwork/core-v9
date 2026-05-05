@@ -23,9 +23,9 @@
 package coreinstructiontests
 
 import (
-	"github.com/alimtvnetwork/core-v8/coreinstruction"
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
-	"github.com/alimtvnetwork/core-v8/coretests/results"
+	"github.com/alimtvnetwork/core-v9/coreinstruction"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/coretests/results"
 )
 
 // =============================================================================

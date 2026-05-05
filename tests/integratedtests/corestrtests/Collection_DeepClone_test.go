@@ -27,8 +27,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coredata/corestr"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coredata/corestr"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 func Test_Collection_AddIfFuncErr_Verification(t *testing.T) {
