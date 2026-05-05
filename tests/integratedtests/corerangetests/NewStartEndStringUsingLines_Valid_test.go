@@ -25,8 +25,8 @@ package corerangetests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coredata/corerange"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coredata/corerange"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // ── NewStartEndStringUsingLines ──

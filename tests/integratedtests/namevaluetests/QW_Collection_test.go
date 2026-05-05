@@ -25,8 +25,8 @@ package namevaluetests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/namevalue"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/namevalue"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 func Test_QW_Collection_String_NilReceiver(t *testing.T) {

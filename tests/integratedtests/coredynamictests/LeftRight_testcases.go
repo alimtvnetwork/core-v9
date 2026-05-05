@@ -23,9 +23,9 @@
 package coredynamictests
 
 import (
-	"github.com/alimtvnetwork/core-v8/coredata/coredynamic"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/coredata/coredynamic"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
 )
 
 // Note: Nil receiver test cases migrated to LeftRight_NilReceiver_testcases.go

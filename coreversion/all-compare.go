@@ -23,8 +23,8 @@
 package coreversion
 
 import (
-	"github.com/alimtvnetwork/core-v8/corecmp"
-	"github.com/alimtvnetwork/core-v8/corecomparator"
+	"github.com/alimtvnetwork/core-v9/corecmp"
+	"github.com/alimtvnetwork/core-v9/corecomparator"
 )
 
 func Compare(

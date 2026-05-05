@@ -25,8 +25,8 @@ package pagingutiltests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/pagingutil"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/pagingutil"
 )
 
 func Test_GetPagesSize_Verification(t *testing.T) {

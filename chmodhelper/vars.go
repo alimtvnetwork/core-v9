@@ -25,7 +25,7 @@ package chmodhelper
 import (
 	"sync"
 
-	"github.com/alimtvnetwork/core-v8/internal/pathinternal"
+	"github.com/alimtvnetwork/core-v9/internal/pathinternal"
 )
 
 var (

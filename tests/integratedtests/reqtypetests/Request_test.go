@@ -26,8 +26,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/reqtype"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/reqtype"
 )
 
 func Test_Request_Identity_Verification(t *testing.T) {

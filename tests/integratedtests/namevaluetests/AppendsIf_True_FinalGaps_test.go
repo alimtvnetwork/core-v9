@@ -25,7 +25,7 @@ package namevaluetests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/namevalue"
+	"github.com/alimtvnetwork/core-v9/namevalue"
 	"github.com/smartystreets/goconvey/convey"
 )
 

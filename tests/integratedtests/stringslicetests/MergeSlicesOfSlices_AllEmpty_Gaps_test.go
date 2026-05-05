@@ -26,7 +26,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coredata/stringslice"
+	"github.com/alimtvnetwork/core-v9/coredata/stringslice"
 	"github.com/smartystreets/goconvey/convey"
 )
 

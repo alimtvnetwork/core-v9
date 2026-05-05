@@ -23,7 +23,7 @@
 package chmodclasstype
 
 import (
-	"github.com/alimtvnetwork/core-v8/coreinterface/enuminf"
+	"github.com/alimtvnetwork/core-v9/coreinterface/enuminf"
 )
 
 type Variant byte

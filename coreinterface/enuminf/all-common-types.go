@@ -23,8 +23,8 @@
 package enuminf
 
 import (
-	"github.com/alimtvnetwork/core-v8/internal/internalinterface"
-	"github.com/alimtvnetwork/core-v8/internal/internalinterface/internalenuminf"
+	"github.com/alimtvnetwork/core-v9/internal/internalinterface"
+	"github.com/alimtvnetwork/core-v9/internal/internalinterface/internalenuminf"
 )
 
 type EnvironmentFlagTyper interface {

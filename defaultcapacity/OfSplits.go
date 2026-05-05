@@ -23,7 +23,7 @@
 package defaultcapacity
 
 import (
-	"github.com/alimtvnetwork/core-v8/constants"
+	"github.com/alimtvnetwork/core-v9/constants"
 )
 
 // OfSplits

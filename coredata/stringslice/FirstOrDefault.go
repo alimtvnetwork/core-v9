@@ -22,7 +22,7 @@
 
 package stringslice
 
-import "github.com/alimtvnetwork/core-v8/constants"
+import "github.com/alimtvnetwork/core-v9/constants"
 
 func FirstOrDefault(slice []string) string {
 	if len(slice) == 0 {

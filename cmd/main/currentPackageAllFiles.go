@@ -27,7 +27,7 @@ import (
 	"log"
 	"path/filepath"
 
-	"github.com/alimtvnetwork/core-v8/chmodhelper"
+	"github.com/alimtvnetwork/core-v9/chmodhelper"
 )
 
 func currentPackageAllFiles() []string {

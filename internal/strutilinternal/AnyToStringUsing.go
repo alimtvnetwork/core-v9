@@ -25,7 +25,7 @@ package strutilinternal
 import (
 	"fmt"
 
-	"github.com/alimtvnetwork/core-v8/constants"
+	"github.com/alimtvnetwork/core-v9/constants"
 )
 
 func AnyToStringUsing(

@@ -25,8 +25,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/alimtvnetwork/core-v8/chmodhelper"
-	"github.com/alimtvnetwork/core-v8/errcore"
+	"github.com/alimtvnetwork/core-v9/chmodhelper"
+	"github.com/alimtvnetwork/core-v9/errcore"
 )
 
 func readWriteTest01() {

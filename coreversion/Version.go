@@ -25,11 +25,11 @@ package coreversion
 import (
 	"strconv"
 
-	"github.com/alimtvnetwork/core-v8/constants"
-	"github.com/alimtvnetwork/core-v8/corecmp"
-	"github.com/alimtvnetwork/core-v8/corecomparator"
-	"github.com/alimtvnetwork/core-v8/coredata/corejson"
-	"github.com/alimtvnetwork/core-v8/enums/versionindexes"
+	"github.com/alimtvnetwork/core-v9/constants"
+	"github.com/alimtvnetwork/core-v9/corecmp"
+	"github.com/alimtvnetwork/core-v9/corecomparator"
+	"github.com/alimtvnetwork/core-v9/coredata/corejson"
+	"github.com/alimtvnetwork/core-v9/enums/versionindexes"
 )
 
 type Version struct {

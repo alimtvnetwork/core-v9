@@ -26,10 +26,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
-	"github.com/alimtvnetwork/core-v8/corevalidator"
-	"github.com/alimtvnetwork/core-v8/enums/stringcompareas"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/corevalidator"
+	"github.com/alimtvnetwork/core-v9/enums/stringcompareas"
 )
 
 // ── SliceValidators.AssertVerifyAll: non-empty with error (lines 114-120) ──

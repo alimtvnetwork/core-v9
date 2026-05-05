@@ -25,7 +25,7 @@ package stringutil
 import (
 	"strings"
 
-	"github.com/alimtvnetwork/core-v8/constants"
+	"github.com/alimtvnetwork/core-v9/constants"
 )
 
 // RemoveManyBySplitting Remove as per removes then splits by the given separator

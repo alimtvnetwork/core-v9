@@ -23,7 +23,7 @@
 package defaultcapacity
 
 import (
-	"github.com/alimtvnetwork/core-v8/constants/percentconst"
+	"github.com/alimtvnetwork/core-v9/constants/percentconst"
 )
 
 // PredictiveFiftyPercentIncrement Result must be positive possibleLen * multiplier + additionalCap.

@@ -23,8 +23,8 @@
 package chmodhelper
 
 import (
-	"github.com/alimtvnetwork/core-v8/chmodhelper/chmodins"
-	"github.com/alimtvnetwork/core-v8/constants"
+	"github.com/alimtvnetwork/core-v9/chmodhelper/chmodins"
+	"github.com/alimtvnetwork/core-v9/constants"
 )
 
 func ParseRwxInstructionToStringRwx(

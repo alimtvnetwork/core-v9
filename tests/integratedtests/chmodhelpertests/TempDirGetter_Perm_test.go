@@ -28,9 +28,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/chmodhelper"
-	"github.com/alimtvnetwork/core-v8/chmodhelper/chmodins"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/chmodhelper"
+	"github.com/alimtvnetwork/core-v9/chmodhelper/chmodins"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // ── tempDirGetter ──

@@ -25,7 +25,7 @@ package coredynamic
 import (
 	"reflect"
 
-	"github.com/alimtvnetwork/core-v8/defaulterr"
+	"github.com/alimtvnetwork/core-v9/defaulterr"
 )
 
 // DynamicReflect.go — Reflection-based operations, loops, filters, and

@@ -23,7 +23,7 @@
 package coreversiontests
 
 import (
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
 )
 
 type testWrapper coretestcases.CaseV1

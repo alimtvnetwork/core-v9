@@ -26,8 +26,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/corecmp"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/corecmp"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 func Test_Integer_Compare_Verification(t *testing.T) {

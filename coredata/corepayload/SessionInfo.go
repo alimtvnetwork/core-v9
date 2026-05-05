@@ -23,8 +23,8 @@
 package corepayload
 
 import (
-	"github.com/alimtvnetwork/core-v8/constants"
-	"github.com/alimtvnetwork/core-v8/converters"
+	"github.com/alimtvnetwork/core-v9/constants"
+	"github.com/alimtvnetwork/core-v9/converters"
 )
 
 type SessionInfo struct {

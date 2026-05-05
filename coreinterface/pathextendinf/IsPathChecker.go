@@ -22,7 +22,7 @@
 
 package pathextendinf
 
-import "github.com/alimtvnetwork/core-v8/internal/internalinterface/internalpathextender"
+import "github.com/alimtvnetwork/core-v9/internal/internalinterface/internalpathextender"
 
 type IsPathChecker interface {
 	internalpathextender.IsPathChecker

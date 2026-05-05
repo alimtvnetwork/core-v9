@@ -28,10 +28,10 @@ import (
 	"path"
 	"strings"
 
-	"github.com/alimtvnetwork/core-v8/constants"
-	"github.com/alimtvnetwork/core-v8/coredata/corestr"
-	"github.com/alimtvnetwork/core-v8/errcore"
-	"github.com/alimtvnetwork/core-v8/internal/pathinternal"
+	"github.com/alimtvnetwork/core-v9/constants"
+	"github.com/alimtvnetwork/core-v9/coredata/corestr"
+	"github.com/alimtvnetwork/core-v9/errcore"
+	"github.com/alimtvnetwork/core-v9/internal/pathinternal"
 )
 
 type DirFilesWithContent struct {

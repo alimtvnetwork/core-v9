@@ -23,7 +23,7 @@
 package coretaskinfo
 
 import (
-	"github.com/alimtvnetwork/core-v8/coredata/corestr"
+	"github.com/alimtvnetwork/core-v9/coredata/corestr"
 )
 
 // Info holds metadata about a task including name, description, URLs, examples,

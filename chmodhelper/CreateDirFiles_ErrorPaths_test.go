@@ -28,7 +28,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/chmodhelper/chmodins"
+	"github.com/alimtvnetwork/core-v9/chmodhelper/chmodins"
 )
 
 // ── CreateDefaultPaths error path ──────────────────────────

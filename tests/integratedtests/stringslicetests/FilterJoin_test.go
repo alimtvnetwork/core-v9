@@ -25,8 +25,8 @@ package stringslicetests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coredata/stringslice"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coredata/stringslice"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 func Test_NonEmptySlice_Verification(t *testing.T) {

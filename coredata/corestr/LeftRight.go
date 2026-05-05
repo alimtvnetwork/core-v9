@@ -26,9 +26,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/alimtvnetwork/core-v8/constants"
-	"github.com/alimtvnetwork/core-v8/coredata/coregeneric"
-	"github.com/alimtvnetwork/core-v8/internal/strutilinternal"
+	"github.com/alimtvnetwork/core-v9/constants"
+	"github.com/alimtvnetwork/core-v9/coredata/coregeneric"
+	"github.com/alimtvnetwork/core-v9/internal/strutilinternal"
 )
 
 // LeftRight is a string-specialized two-value container.

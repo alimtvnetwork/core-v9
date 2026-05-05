@@ -25,7 +25,7 @@ package chmodhelpertests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/tests/testwrappers/chmodhelpertestwrappers"
+	"github.com/alimtvnetwork/core-v9/tests/testwrappers/chmodhelpertestwrappers"
 )
 
 func assertTestCaseChmodAsExpected(

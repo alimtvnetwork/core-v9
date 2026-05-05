@@ -27,8 +27,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/internal/mapdiffinternal"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/internal/mapdiffinternal"
 )
 
 func Test_MapStringAnyDiff_Length_Verification(t *testing.T) {

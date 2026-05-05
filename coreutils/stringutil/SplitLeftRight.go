@@ -25,8 +25,8 @@ package stringutil
 import (
 	"strings"
 
-	"github.com/alimtvnetwork/core-v8/constants"
-	"github.com/alimtvnetwork/core-v8/coreindexes"
+	"github.com/alimtvnetwork/core-v9/constants"
+	"github.com/alimtvnetwork/core-v9/coreindexes"
 )
 
 func SplitLeftRight(s, separator string) (left, right string) {

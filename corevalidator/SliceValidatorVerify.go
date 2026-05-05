@@ -23,8 +23,8 @@
 package corevalidator
 
 import (
-	"github.com/alimtvnetwork/core-v8/constants"
-	"github.com/alimtvnetwork/core-v8/errcore"
+	"github.com/alimtvnetwork/core-v9/constants"
+	"github.com/alimtvnetwork/core-v9/errcore"
 )
 
 func (it *SliceValidator) VerifyFirstError(

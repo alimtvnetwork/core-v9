@@ -25,8 +25,8 @@ package coremathtests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coremath"
-	"github.com/alimtvnetwork/core-v8/osconsts"
+	"github.com/alimtvnetwork/core-v9/coremath"
+	"github.com/alimtvnetwork/core-v9/osconsts"
 	"github.com/smartystreets/goconvey/convey"
 )
 

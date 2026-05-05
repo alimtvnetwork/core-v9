@@ -25,10 +25,10 @@ package coreversiontests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/corecomparator"
-	"github.com/alimtvnetwork/core-v8/coredata/corestr"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/coreversion"
+	"github.com/alimtvnetwork/core-v9/corecomparator"
+	"github.com/alimtvnetwork/core-v9/coredata/corestr"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coreversion"
 )
 
 func Test_Comparison_Verification(t *testing.T) {

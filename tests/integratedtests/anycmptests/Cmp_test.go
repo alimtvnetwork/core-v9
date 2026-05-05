@@ -25,10 +25,10 @@ package anycmptests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/anycmp"
-	"github.com/alimtvnetwork/core-v8/coredata/corestr"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/anycmp"
+	"github.com/alimtvnetwork/core-v9/coredata/corestr"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
 )
 
 func Test_Cmp_Verification(t *testing.T) {

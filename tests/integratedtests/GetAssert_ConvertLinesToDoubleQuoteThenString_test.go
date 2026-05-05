@@ -25,8 +25,8 @@ package integratedtests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coredata/corestr"
-	"github.com/alimtvnetwork/core-v8/coretests"
+	"github.com/alimtvnetwork/core-v9/coredata/corestr"
+	"github.com/alimtvnetwork/core-v9/coretests"
 )
 
 func Test_ConvertLinesToDoubleQuoteThenString_Verification(t *testing.T) {

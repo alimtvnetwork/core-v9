@@ -25,9 +25,9 @@ package keymktests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coredata/corejson"
-	"github.com/alimtvnetwork/core-v8/keymk"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coredata/corejson"
+	"github.com/alimtvnetwork/core-v9/keymk"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 func Test_QW_Key_Compile_WithBrackets(t *testing.T) {

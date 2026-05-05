@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/alimtvnetwork/core-v8/corecomparator"
-	"github.com/alimtvnetwork/core-v8/corecmp"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/corecomparator"
+	"github.com/alimtvnetwork/core-v9/corecmp"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 // ── VersionSliceByte ──

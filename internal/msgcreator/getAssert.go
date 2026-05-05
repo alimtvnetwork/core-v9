@@ -27,9 +27,9 @@ import (
 	"log/slog"
 	"strings"
 
-	"github.com/alimtvnetwork/core-v8/constants"
-	"github.com/alimtvnetwork/core-v8/internal/convertinternal"
-	"github.com/alimtvnetwork/core-v8/internal/msgformats"
+	"github.com/alimtvnetwork/core-v9/constants"
+	"github.com/alimtvnetwork/core-v9/internal/convertinternal"
+	"github.com/alimtvnetwork/core-v9/internal/msgformats"
 )
 
 type getAssert struct{}

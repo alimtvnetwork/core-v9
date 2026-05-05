@@ -28,7 +28,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
 )
 
 // isStackTraceLine returns true if the line is a stack trace artifact

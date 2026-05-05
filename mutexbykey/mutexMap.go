@@ -25,7 +25,7 @@ package mutexbykey
 import (
 	"sync"
 
-	"github.com/alimtvnetwork/core-v8/constants"
+	"github.com/alimtvnetwork/core-v9/constants"
 )
 
 type mutexMap struct {

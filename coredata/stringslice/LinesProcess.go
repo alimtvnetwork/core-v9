@@ -23,7 +23,7 @@
 package stringslice
 
 import (
-	"github.com/alimtvnetwork/core-v8/constants"
+	"github.com/alimtvnetwork/core-v9/constants"
 )
 
 // LinesProcess split text using constants.NewLineUnix

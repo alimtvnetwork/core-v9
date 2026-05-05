@@ -23,9 +23,9 @@
 package args
 
 import (
-	"github.com/alimtvnetwork/core-v8/coredata/corestr"
-	"github.com/alimtvnetwork/core-v8/coreinterface"
-	"github.com/alimtvnetwork/core-v8/internal/reflectinternal"
+	"github.com/alimtvnetwork/core-v9/coredata/corestr"
+	"github.com/alimtvnetwork/core-v9/coreinterface"
+	"github.com/alimtvnetwork/core-v9/internal/reflectinternal"
 )
 
 // Holder is a flexible 6-slot argument holder with a typed WorkFunc

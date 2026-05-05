@@ -27,11 +27,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/alimtvnetwork/core-v8/constants"
-	"github.com/alimtvnetwork/core-v8/coreutils/stringutil"
-	"github.com/alimtvnetwork/core-v8/enums/stringcompareas"
-	"github.com/alimtvnetwork/core-v8/errcore"
-	"github.com/alimtvnetwork/core-v8/internal/msgformats"
+	"github.com/alimtvnetwork/core-v9/constants"
+	"github.com/alimtvnetwork/core-v9/coreutils/stringutil"
+	"github.com/alimtvnetwork/core-v9/enums/stringcompareas"
+	"github.com/alimtvnetwork/core-v9/errcore"
+	"github.com/alimtvnetwork/core-v9/internal/msgformats"
 )
 
 type TextValidator struct {

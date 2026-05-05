@@ -25,10 +25,10 @@ package isanytests
 import (
 	"reflect"
 
-	"github.com/alimtvnetwork/core-v8/coretests"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/isany"
-	"github.com/alimtvnetwork/core-v8/issetter"
+	"github.com/alimtvnetwork/core-v9/coretests"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/isany"
+	"github.com/alimtvnetwork/core-v9/issetter"
 )
 
 var (

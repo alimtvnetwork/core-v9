@@ -22,7 +22,7 @@
 
 package coreapi
 
-import "github.com/alimtvnetwork/core-v8/constants"
+import "github.com/alimtvnetwork/core-v9/constants"
 
 // TypedResponse is the generic API response type.
 //

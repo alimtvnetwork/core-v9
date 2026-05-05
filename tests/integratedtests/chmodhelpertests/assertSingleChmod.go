@@ -26,9 +26,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/chmodhelper"
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
-	"github.com/alimtvnetwork/core-v8/errcore"
+	"github.com/alimtvnetwork/core-v9/chmodhelper"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/errcore"
 )
 
 // assertSingleChmod , expectedChmodRwxFullString 10 chars "-rwxrwxrwx"

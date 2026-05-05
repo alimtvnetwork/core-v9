@@ -25,7 +25,7 @@ package coreinterface
 import (
 	"reflect"
 
-	"github.com/alimtvnetwork/core-v8/internal/internalinterface"
+	"github.com/alimtvnetwork/core-v9/internal/internalinterface"
 )
 
 type IsReflectionTypeChecker interface {

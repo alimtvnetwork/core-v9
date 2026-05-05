@@ -25,8 +25,8 @@ package coretests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/errcore"
-	"github.com/alimtvnetwork/core-v8/osconsts"
+	"github.com/alimtvnetwork/core-v9/errcore"
+	"github.com/alimtvnetwork/core-v9/osconsts"
 )
 
 // SkipOnUnix Skip on Unix

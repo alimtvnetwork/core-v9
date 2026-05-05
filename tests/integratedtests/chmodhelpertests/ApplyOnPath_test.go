@@ -26,9 +26,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/chmodhelper"
-	"github.com/alimtvnetwork/core-v8/coretests"
-	"github.com/alimtvnetwork/core-v8/tests/testwrappers/chmodhelpertestwrappers"
+	"github.com/alimtvnetwork/core-v9/chmodhelper"
+	"github.com/alimtvnetwork/core-v9/coretests"
+	"github.com/alimtvnetwork/core-v9/tests/testwrappers/chmodhelpertestwrappers"
 )
 
 func Test_ApplyOnPath_Unix(t *testing.T) {

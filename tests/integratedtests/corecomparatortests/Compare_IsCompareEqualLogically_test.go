@@ -25,8 +25,8 @@ package corecomparatortests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/corecomparator"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
+	"github.com/alimtvnetwork/core-v9/corecomparator"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
 )
 
 func Test_Compare_IsCompareEqualLogically_LeftLessEqual(t *testing.T) {

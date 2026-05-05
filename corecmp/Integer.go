@@ -22,7 +22,7 @@
 
 package corecmp
 
-import "github.com/alimtvnetwork/core-v8/corecomparator"
+import "github.com/alimtvnetwork/core-v9/corecomparator"
 
 func Integer(left, right int) corecomparator.Compare {
 	if left == right {

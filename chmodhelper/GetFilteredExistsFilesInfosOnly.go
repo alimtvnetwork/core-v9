@@ -25,8 +25,8 @@ package chmodhelper
 import (
 	"os"
 
-	"github.com/alimtvnetwork/core-v8/constants"
-	"github.com/alimtvnetwork/core-v8/internal/fsinternal"
+	"github.com/alimtvnetwork/core-v9/constants"
+	"github.com/alimtvnetwork/core-v9/internal/fsinternal"
 )
 
 // GetFilteredExistsFilesInfosOnly

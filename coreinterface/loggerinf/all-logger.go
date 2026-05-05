@@ -23,8 +23,8 @@
 package loggerinf
 
 import (
-	"github.com/alimtvnetwork/core-v8/coreinterface"
-	"github.com/alimtvnetwork/core-v8/coreinterface/serializerinf"
+	"github.com/alimtvnetwork/core-v9/coreinterface"
+	"github.com/alimtvnetwork/core-v9/coreinterface/serializerinf"
 )
 
 type StandardLoggerGetter interface {

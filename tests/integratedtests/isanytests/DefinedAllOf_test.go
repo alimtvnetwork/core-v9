@@ -25,10 +25,10 @@ package isanytests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/corecsv"
-	"github.com/alimtvnetwork/core-v8/coredata/corestr"
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
-	"github.com/alimtvnetwork/core-v8/isany"
+	"github.com/alimtvnetwork/core-v9/corecsv"
+	"github.com/alimtvnetwork/core-v9/coredata/corestr"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/isany"
 )
 
 func Test_DefinedAllOf_Verification(t *testing.T) {

@@ -22,7 +22,7 @@
 
 package corecmp
 
-import "github.com/alimtvnetwork/core-v8/corecomparator"
+import "github.com/alimtvnetwork/core-v9/corecomparator"
 
 // AnyItem compares two any values for equality using Go's built-in == operator.
 //

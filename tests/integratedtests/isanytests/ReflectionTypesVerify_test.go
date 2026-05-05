@@ -25,11 +25,11 @@ package isanytests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/conditional"
-	"github.com/alimtvnetwork/core-v8/coredata/corestr"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
-	"github.com/alimtvnetwork/core-v8/internal/convertinternal"
+	"github.com/alimtvnetwork/core-v9/conditional"
+	"github.com/alimtvnetwork/core-v9/coredata/corestr"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/internal/convertinternal"
 )
 
 func Test_Reflection_Types_Verification(t *testing.T) {

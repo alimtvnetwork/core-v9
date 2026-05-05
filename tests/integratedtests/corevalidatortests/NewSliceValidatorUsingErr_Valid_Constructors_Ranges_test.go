@@ -26,11 +26,11 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coredata/corerange"
-	"github.com/alimtvnetwork/core-v8/coredata/corestr"
-	"github.com/alimtvnetwork/core-v8/corevalidator"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/enums/stringcompareas"
+	"github.com/alimtvnetwork/core-v9/coredata/corerange"
+	"github.com/alimtvnetwork/core-v9/coredata/corestr"
+	"github.com/alimtvnetwork/core-v9/corevalidator"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/enums/stringcompareas"
 )
 
 func createSimpleSliceValidator(expectedLines []string) *corevalidator.SimpleSliceValidator {

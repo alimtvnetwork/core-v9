@@ -23,8 +23,8 @@
 package chmodhelpertestwrappers
 
 import (
-	"github.com/alimtvnetwork/core-v8/chmodhelper"
-	"github.com/alimtvnetwork/core-v8/chmodhelper/chmodclasstype"
+	"github.com/alimtvnetwork/core-v9/chmodhelper"
+	"github.com/alimtvnetwork/core-v9/chmodhelper/chmodclasstype"
 )
 
 var SingleRwxTestCases = []chmodhelper.SingleRwx{

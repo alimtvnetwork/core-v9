@@ -26,8 +26,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/converters/coreconverted"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/converters/coreconverted"
 )
 
 func Test_Bytes_BasicMethods(t *testing.T) {

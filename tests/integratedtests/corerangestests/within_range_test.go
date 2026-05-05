@@ -25,8 +25,8 @@ package corerangestests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/converters"
-	"github.com/alimtvnetwork/core-v8/errcore"
+	"github.com/alimtvnetwork/core-v9/converters"
+	"github.com/alimtvnetwork/core-v9/errcore"
 	"github.com/smarty/assertions/should"
 	"github.com/smartystreets/goconvey/convey"
 )

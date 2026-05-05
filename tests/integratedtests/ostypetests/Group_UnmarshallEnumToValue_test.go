@@ -25,8 +25,8 @@ package ostypetests
 import (
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/ostype"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/ostype"
 )
 
 // Test_Cov4_Group_UnmarshallEnumToValue covers

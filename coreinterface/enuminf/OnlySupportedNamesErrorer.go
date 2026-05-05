@@ -22,7 +22,7 @@
 
 package enuminf
 
-import "github.com/alimtvnetwork/core-v8/internal/internalinterface/internalenuminf"
+import "github.com/alimtvnetwork/core-v9/internal/internalinterface/internalenuminf"
 
 type OnlySupportedNamesErrorer interface {
 	internalenuminf.OnlySupportedNamesErrorer

@@ -27,10 +27,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/errcore"
-	"github.com/alimtvnetwork/core-v8/issetter"
+	"github.com/alimtvnetwork/core-v9/coretests"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/errcore"
+	"github.com/alimtvnetwork/core-v9/issetter"
 	"github.com/smartystreets/goconvey/convey"
 )
 

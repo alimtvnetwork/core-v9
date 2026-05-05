@@ -22,7 +22,7 @@
 
 package loggerinf
 
-import "github.com/alimtvnetwork/core-v8/coreinterface/enuminf"
+import "github.com/alimtvnetwork/core-v9/coreinterface/enuminf"
 
 type FullLogger interface {
 	LogModel(

@@ -22,7 +22,7 @@
 
 package chmodhelper
 
-import "github.com/alimtvnetwork/core-v8/chmodhelper/chmodins"
+import "github.com/alimtvnetwork/core-v9/chmodhelper/chmodins"
 
 func ParseBaseRwxInstructionsToExecutors(
 	baseRwxInstructions *chmodins.BaseRwxInstructions,

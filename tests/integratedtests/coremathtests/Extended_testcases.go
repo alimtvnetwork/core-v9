@@ -25,8 +25,8 @@ package coremathtests
 import (
 	"math"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/coretests/coretestcases"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/coretests/coretestcases"
 )
 
 var integerWithinToInt32TestCases = []coretestcases.CaseV1{

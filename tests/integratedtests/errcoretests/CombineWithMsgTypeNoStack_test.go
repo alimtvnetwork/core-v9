@@ -26,9 +26,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/errcore"
-	"github.com/alimtvnetwork/core-v8/namevalue"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/errcore"
+	"github.com/alimtvnetwork/core-v9/namevalue"
 )
 
 // mockLengthGetterCov6 implements the lengthGetter interface for testing.

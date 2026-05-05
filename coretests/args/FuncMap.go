@@ -26,9 +26,9 @@ import (
 	"errors"
 	"reflect"
 
-	"github.com/alimtvnetwork/core-v8/codestack"
-	"github.com/alimtvnetwork/core-v8/errcore"
-	"github.com/alimtvnetwork/core-v8/internal/reflectinternal"
+	"github.com/alimtvnetwork/core-v9/codestack"
+	"github.com/alimtvnetwork/core-v9/errcore"
+	"github.com/alimtvnetwork/core-v9/internal/reflectinternal"
 )
 
 // FuncMap is a named map of function names to their FuncWrapAny representations.

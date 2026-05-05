@@ -26,9 +26,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/corecsv"
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/isany"
+	"github.com/alimtvnetwork/core-v9/corecsv"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/isany"
 )
 
 // Test_Extended_Defined_TypedNil verifies isany.Defined with typed-nil error and *int.

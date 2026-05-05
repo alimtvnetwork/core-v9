@@ -27,8 +27,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/alimtvnetwork/core-v8/coretests/args"
-	"github.com/alimtvnetwork/core-v8/isany"
+	"github.com/alimtvnetwork/core-v9/coretests/args"
+	"github.com/alimtvnetwork/core-v9/isany"
 )
 
 func Test_Ext_NotNull_Verification(t *testing.T) {
