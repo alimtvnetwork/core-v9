@@ -24,6 +24,7 @@ Suggestions tracked in single file: `.lovable/memory/suggestions/01-suggestions-
 Roadmap & next-task selection in root `plan.md`.
 
 ## Memories
+- [Read Memory Enhanced](mem://learned/01-read-memory-enhanced) — Read memory summary
 - [Reliability Risk Report](mem://reports/01-reliability-risk-report) — 2026-05-04 executive — success probabilities by tier, top 5 risks, readiness decision
 - [macOS Runner RCA](mem://reports/02-macos-runner-root-cause-analysis) — Root cause for OSC 11 terminal leak and hidden compile-vs-runtime diagnosis
 - [Suggestions Tracker](mem://suggestions/01-suggestions-tracker) — Active suggestions S-009..S-015 (single tracker file)
