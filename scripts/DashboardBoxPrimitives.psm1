@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # DashboardBoxPrimitives.psm1 — Progress bar + box-drawing primitives
 #
 # Dependencies: DashboardTheme.psm1 (script-scope color variables)

@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # DashboardCoverageTable.psm1 — Bordered per-package coverage table
 #
 # Dependencies: DashboardTheme.psm1, DashboardBoxPrimitives.psm1

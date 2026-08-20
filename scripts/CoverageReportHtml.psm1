@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # CoverageReportHtml.psm1 — HTML report + AI button + console summary
 #
 # Dependencies: CoverageReportTxt.psm1 (Get-LowCoverageFunctions),

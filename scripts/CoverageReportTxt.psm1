@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # CoverageReportTxt.psm1 — TXT report generation + coverage parsing helpers
 #
 # Dependencies: None (standalone)

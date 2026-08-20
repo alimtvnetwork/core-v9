@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # CoverageSplitRecovery.psm1 — Per-file split recovery for blocked packages
 #
 # Dependencies: Utilities.psm1, ErrorParser.psm1, ErrorExtractor.psm1, DashboardPhases.psm1

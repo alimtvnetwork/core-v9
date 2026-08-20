@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # ErrorParser.psm1 — Error accumulation + compile error parser
 #
 # Dependencies: ErrorExtractor.psm1 (Extract-BuildErrorLines, Extract-RuntimeFailureLines,

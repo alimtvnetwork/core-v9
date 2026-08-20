@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # PreCommitCheck.psm1 — Pre-commit API mismatch checker for Coverage* files
 #
 # Now reuses Invoke-CoveragePreChecks for the autofix/bracecheck pipeline,

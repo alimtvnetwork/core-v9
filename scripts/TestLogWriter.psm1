@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # TestLogWriter.psm1 — Go test output log parser and file writer
 #
 # Parses raw Go test output, classifies tests as passing/failing,

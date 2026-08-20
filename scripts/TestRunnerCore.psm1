@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # TestRunnerCore.psm1 — Git ops, build check, test invocation primitives
 #
 # Dependencies: Utilities.psm1, ErrorParser.psm1, TestLogWriter.psm1

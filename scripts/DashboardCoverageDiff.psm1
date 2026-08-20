@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # DashboardCoverageDiff.psm1 — Coverage diff rendering + snapshot management
 #
 # Dependencies: DashboardTheme.psm1, DashboardBoxPrimitives.psm1

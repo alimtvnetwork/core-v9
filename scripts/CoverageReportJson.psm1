@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # CoverageReportJson.psm1 — JSON report generation + error/failure reports
 #
 # Dependencies: CoverageReportTxt.psm1 (Get-LowCoverageFunctions),

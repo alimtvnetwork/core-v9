@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # DashboardSections.psm1 — High-level section renderers (header, score, etc.)
 #
 # Dependencies: DashboardTheme.psm1, DashboardBoxPrimitives.psm1

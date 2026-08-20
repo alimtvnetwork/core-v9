@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # CoverageCompileCheck.psm1 — Pre-coverage compile checks (sync + parallel)
 #
 # Dependencies: Utilities.psm1, ErrorParser.psm1, ErrorExtractor.psm1

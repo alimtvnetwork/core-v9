@@ -84,7 +84,7 @@ $moduleOrder = @(
     "BuildTools", "GoConvey", "PreCommitCheck", "Help"
 )
 foreach ($mod in $moduleOrder) {
-    $modPath = Join-Path $PSScriptRoot "scripts" "$mod.psm1"
+    $modPath = Join-Path (Join-Path $PSScriptRoot "scripts") "$mod.psm1"
     if (Test-Path $modPath) { Import-Module $modPath -Force -DisableNameChecking }
 }
 

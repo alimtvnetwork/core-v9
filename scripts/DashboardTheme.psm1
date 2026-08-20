@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # DashboardTheme.psm1 — Theme detection, ANSI color initialization
 #
 # Usage:
@@ -168,14 +168,13 @@ function Test-DashboardTheme {
         Set-ThemeColors $theme
         Write-Host ""
         Write-Host "$($script:cBold)=== Theme: $theme ===$($script:cReset)"
-        Write-Host "  $($script:cLime)✓ Success / Lime$($script:cReset)"
-        Write-Host "  $($script:cRed)✗ Error / Red$($script:cReset)"
-        Write-Host "  $($script:cPurple)● Purple / Todo$($script:cReset)"
-        Write-Host "  $($script:cCyan)▶ Cyan / Info$($script:cReset)"
-        Write-Host "  $($script:cYellow)⚠ Yellow / Warning$($script:cReset)"
+        Write-Host "  $($script:cLime)Success / Lime$($script:cReset)"
+        Write-Host "  $($script:cRed)Error / Red$($script:cReset)"
+        Write-Host "  $($script:cPurple)Purple / Todo$($script:cReset)"
+        Write-Host "  $($script:cCyan)Cyan / Info$($script:cReset)"
+        Write-Host "  $($script:cYellow)Yellow / Warning$($script:cReset)"
         Write-Host "  $($script:cMuted)Muted text$($script:cReset)"
         Write-Host "  $($script:cWhite)Primary text$($script:cReset)"
-        Write-Host "  Bar: $(Get-ProgressBar -Score 73)"
         Write-Host ""
     }
     Set-ThemeColors $script:CurrentTheme

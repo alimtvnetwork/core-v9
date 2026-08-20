@@ -1,4 +1,4 @@
-# ─────────────────────────────────────────────────────────────────────────────
+﻿# ─────────────────────────────────────────────────────────────────────────────
 # TestRunner.psm1 — High-level test commands (TA, TP)
 #
 # Dependencies: TestRunnerCore.psm1, Utilities.psm1, TestLogWriter.psm1
