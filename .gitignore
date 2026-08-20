@@ -145,3 +145,4 @@ per-package-coverage.json
 per-package-coverage.txt
 .gitmap/release-assets
 release-assets
+/.gitmap/backup

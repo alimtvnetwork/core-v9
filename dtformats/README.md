@@ -35,7 +35,7 @@ All standard Go time layouts are available as typed constants:
 ## Usage
 
 ```go
-import "github.com/alimtvnetwork/core-v8/dtformats"
+import "github.com/alimtvnetwork/core-v9/dtformats"
 
 layout := dtformats.RFC3339
 fmt.Println(layout.IsDateTime())   // true

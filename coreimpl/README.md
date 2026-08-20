@@ -59,7 +59,7 @@ coreimpl/
 ### Creating an Enum Type
 
 ```go
-import "github.com/alimtvnetwork/core-v8/coreimpl/enumimpl"
+import "github.com/alimtvnetwork/core-v9/coreimpl/enumimpl"
 
 // Byte enum
 byteEnum := enumimpl.New.BasicByte.CreateUsingSlicePlusAliasMapOptions(

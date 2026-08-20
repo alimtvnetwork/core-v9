@@ -17,7 +17,7 @@ No boolean flag parameters. Suffix sequence: Base+Filter+Type+Lock+If+Must.
 Pointer receivers are mandatory for methods requiring nil-safety.
 PowerShell modules target ≤150 lines. CRLF required. PS scripts cannot overwrite Go source.
 Directory creation (e.g., `os.MkdirAll`) must use `0755` (dirDefaultChmod).
-Module path: `github.com/alimtvnetwork/core-v8` (renamed from `core`). Go 1.25.
+Module path: `github.com/alimtvnetwork/core-v9` (renamed from `core`). Go 1.25.
 CI uses `golangci-lint` with `version: latest` to match Go version.
 Pending issues tracked in single file: `.lovable/memory/pending-issues/01-pending-issues-tracker.md`.
 Suggestions tracked in single file: `.lovable/memory/suggestions/01-suggestions-tracker.md`.
@@ -32,7 +32,7 @@ Roadmap & next-task selection in root `plan.md`.
 - [macOS Runner Fix](mem://workflow/02-macos-runner-fix) — Applied script fixes for macOS terminal probing and error classification
 - [corestrtests Cleanup Progress](mem://workflow/03-corestrtests-cleanup-progress) — 7-phase corestrtests naming/structure/assertion cleanup; Phase 1 (38 _Cov2 symbols) done
 - [File Naming Cleanup](mem://workflow/03-file-naming-cleanup) — 6-phase plan: Coverage/C##/Src_ file renames + CovN symbol fixes
-- [Module Rename](mem://workflow/04-module-rename-core-to-core-v8) — Migration from core to core-v8, all imports updated
+- [Module Rename](mem://workflow/04-module-rename-core-to-core-v9) — Migration from core to core-v9, all imports updated
 - [Go Version Upgrade](mem://workflow/05-go-version-upgrade) — Go 1.24 → 1.25 upgrade and golangci-lint side effect
 - [AI Agent Reference](mem://testing/specs/ai-agent-reference) — Go testing and coverage workflows
 - [LLM Integration Guide](mem://project/llm-integration-guide) — Master reference for AI agents

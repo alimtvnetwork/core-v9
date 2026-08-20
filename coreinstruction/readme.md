@@ -101,7 +101,7 @@ coreinstruction/
 ## Usage Examples
 
 ```go
-import "github.com/alimtvnetwork/core-v8/coreinstruction"
+import "github.com/alimtvnetwork/core-v9/coreinstruction"
 
 // Create a specification
 spec := coreinstruction.NewSpecification(

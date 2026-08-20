@@ -1,9 +1,9 @@
-# Plan — core-v8 Roadmap
+# Plan — core-v9 Roadmap
 
 > Single source of truth for handoff to another AI. Edit in place; do not split.
 
 **Last Updated**: 2026-05-04
-**Module**: `github.com/alimtvnetwork/core-v8` (Go 1.25)
+**Module**: `github.com/alimtvnetwork/core-v9` (Go 1.25)
 **Current coverage**: ~58.7% (regressed from 81.2% — see pending issues P-001..P-004)
 
 Companion files:
@@ -21,7 +21,7 @@ Companion files:
 | Phases 1–8 (Foundation → Deep Quality Sweep) | ✅ Done |
 | Error / Go / Test-title modernization | ✅ Done |
 | Phases A–E (Coverage stabilization → Unit coverage fix) | ✅ Done |
-| Module rename core → core-v8 | ✅ Done (2026-05-04) |
+| Module rename core → core-v9 | ✅ Done (2026-05-04) |
 | Go 1.24 → 1.25 upgrade | ✅ Done (2026-05-04) |
 | CI golangci-lint version-mismatch fix (code) | ✅ Applied — pending push (P-006) |
 | **Phase F — Restore blocked test packages** | 🔄 In Progress |

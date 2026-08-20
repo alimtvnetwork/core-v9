@@ -1,15 +1,15 @@
 ---
-name: Module rename core to core-v8
-description: Tracks the migration from github.com/alimtvnetwork/core to core-v8 across all files
+name: Module rename core to core-v9
+description: Tracks the migration from github.com/alimtvnetwork/core to core-v9 across all files
 type: workflow
 ---
 
-# Module Rename: core → core-v8
+# Module Rename: core → core-v9
 
 ## Status: ✅ Done
 
 ## What Changed
-- `go.mod` module path: `github.com/alimtvnetwork/core` → `github.com/alimtvnetwork/core-v8`
+- `go.mod` module path: `github.com/alimtvnetwork/core` → `github.com/alimtvnetwork/core-v9`
 - All Go source files: import paths updated (~700+ files)
 - All test files: import paths updated
 - All spec/doc files: references updated

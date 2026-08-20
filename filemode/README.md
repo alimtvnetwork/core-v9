@@ -23,7 +23,7 @@ Package `filemode` provides named `os.FileMode` constants for common Unix permis
 ## Usage
 
 ```go
-import "github.com/alimtvnetwork/core-v8/filemode"
+import "github.com/alimtvnetwork/core-v9/filemode"
 
 os.WriteFile("config.json", data, filemode.FileDefault)
 os.MkdirAll("/var/app", filemode.DirDefault)

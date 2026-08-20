@@ -36,7 +36,7 @@
 
 ## Implemented Suggestions
 
-### ✅ Module rename core → core-v8
+### ✅ Module rename core → core-v9
 - **Implemented:** Current session
 - **Notes:** All 700+ files updated. Verified with grep. Three PS scripts had remaining refs, fixed in follow-up.
 

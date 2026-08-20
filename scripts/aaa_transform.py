@@ -27,7 +27,7 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 TESTS_ROOT = "tests/integratedtests"
-ARGS_IMPORT = '"github.com/alimtvnetwork/core-v8/coretests/args"'
+ARGS_IMPORT = '"github.com/alimtvnetwork/core-v9/coretests/args"'
 
 @dataclass
 class TransformStats:

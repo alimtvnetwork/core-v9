@@ -32,7 +32,7 @@ defaulterr/
 ## Usage Examples
 
 ```go
-import "github.com/alimtvnetwork/core-v8/defaulterr"
+import "github.com/alimtvnetwork/core-v9/defaulterr"
 
 if data == nil {
     return defaulterr.CannotProcessNilOrEmpty

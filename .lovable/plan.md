@@ -41,9 +41,9 @@
 
 ## Completed
 
-### ✅ Module rename: core → core-v8
+### ✅ Module rename: core → core-v9
 - **Completed:** Current session
-- **Description:** Updated `go.mod` module path and all 700+ import references from `github.com/alimtvnetwork/core` to `core-v8`.
+- **Description:** Updated `go.mod` module path and all 700+ import references from `github.com/alimtvnetwork/core` to `core-v9`.
 - **Files changed:** 700+ Go source, test, spec, script, and data files.
 
 ### ✅ Go version upgrade: 1.24 → 1.25

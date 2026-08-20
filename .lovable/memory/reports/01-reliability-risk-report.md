@@ -1,13 +1,13 @@
 ---
 name: 01-reliability-risk-report
-description: Concise executive risk report — success probability of handing core-v8 specs to another AI
+description: Concise executive risk report — success probability of handing core-v9 specs to another AI
 type: reference
 ---
 
 # Reliability & Failure-Chance Report (Executive)
 
 **Date**: 2026-05-04
-**Scope**: Full spec set under `/spec/` for `github.com/alimtvnetwork/core-v8`
+**Scope**: Full spec set under `/spec/` for `github.com/alimtvnetwork/core-v9`
 **Verdict**: 🟡 **Conditionally ready.** Safe for narrow, well-bounded tasks. **Not safe** for unsupervised bulk coverage work or deprecated-API removal.
 
 ---

@@ -28,7 +28,7 @@ mutexbykey/
 ## Usage
 
 ```go
-import "github.com/alimtvnetwork/core-v8/mutexbykey"
+import "github.com/alimtvnetwork/core-v9/mutexbykey"
 
 // Lock per resource
 mu := mutexbykey.Get("user:123")

@@ -66,6 +66,6 @@
 
 | ID | Issue | Resolved | Notes |
 |----|-------|----------|-------|
-| — | Module rename core → core-v8 | 2026-05-04 | 700+ files updated |
+| — | Module rename core → core-v9 | 2026-05-04 | 700+ files updated |
 | — | Go 1.24 → 1.25 upgrade | 2026-05-04 | `go.mod` + CI |
 | — | golangci-lint version mismatch (code) | 2026-05-04 | Pending push (see P-006) |

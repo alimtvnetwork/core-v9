@@ -13,9 +13,9 @@ type: feature
 - **What happened:** Renamed `cov9Mini` prefixes, stripped `FromNewValidV2/_Alt` suffixes, cleaned coverage comments
 - **Side effect:** 900+ function name redeclaration errors across 8+ test packages
 
-### Module Rename (core → core-v8)
+### Module Rename (core → core-v9)
 - **Status:** ✅ Done
-- **What happened:** All imports updated from `github.com/alimtvnetwork/core` to `core-v8`
+- **What happened:** All imports updated from `github.com/alimtvnetwork/core` to `core-v9`
 - **Side effect:** Minor coverage fluctuations; exposed one test failure in `corestrtests`
 
 ### Phase 1 Regression Fixes

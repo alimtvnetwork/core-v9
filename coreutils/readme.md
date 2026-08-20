@@ -128,7 +128,7 @@ coreutils/
 ## Usage
 
 ```go
-import "github.com/alimtvnetwork/core-v8/coreutils/stringutil"
+import "github.com/alimtvnetwork/core-v9/coreutils/stringutil"
 
 // Inspection
 stringutil.IsEmpty("")           // true

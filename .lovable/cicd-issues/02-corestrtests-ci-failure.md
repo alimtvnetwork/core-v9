@@ -9,7 +9,7 @@ The `corestrtests` package reports `FAIL` during CI `go test ./...` but the spec
 }}
 ...........................................................FAIL
 coverage: 100.0% of statements
-FAIL	github.com/alimtvnetwork/core-v8/tests/integratedtests/corestrtests	3.557s
+FAIL	github.com/alimtvnetwork/core-v9/tests/integratedtests/corestrtests	3.557s
 ```
 
 ## Root Cause

@@ -38,8 +38,8 @@ coresort/
 
 ```go
 import (
-    "github.com/alimtvnetwork/core-v8/coresort/intsort"
-    "github.com/alimtvnetwork/core-v8/coresort/strsort"
+    "github.com/alimtvnetwork/core-v9/coresort/intsort"
+    "github.com/alimtvnetwork/core-v9/coresort/strsort"
 )
 
 // Sort integers ascending
